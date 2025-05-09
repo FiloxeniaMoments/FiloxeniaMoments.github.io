@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule a consultation with Filoxenia Moments - Wedding and Event Planning">
+    <meta name="keywords" content="wedding consultation, event planning booking, consultation appointment">
+    <meta name="author" content="Filoxenia Moments">
+    
+    <title>Book a Consultation | Filoxenia Moments</title>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="stylesheet" href="css/critical.css">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/booking.css" media="print" onload="this.media='all'">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Book a Consultation | Filoxenia Moments">
+    <meta property="og:description" content="Schedule a consultation with our wedding and event planning experts.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://filoxeniamoments.com/booking.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="love-notes.html">Love Notes</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Book a Consultation</h1>
+            <p class="page-description">Schedule a meeting with our event planning experts</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Booking Info Section -->
+        <section class="booking-info-section">
+            <div class="container">
+                <div class="booking-content">
+                    <div class="booking-text fade-in">
+                        <h2>Let's Start Planning Your Event</h2>
+                        <p>
+                            Whether you're planning a wedding, corporate event, or special occasion, our 
+                            consultation is the perfect way to get started. During this session, we'll discuss your 
+                            vision, requirements, and how we can bring your dream event to life.
+                        </p>
+                        
+                        <div class="booking-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="icon-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>60-Minute Consultation</h3>
+                                    <p>A comprehensive discussion about your event needs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="icon-video"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>In-person or Virtual</h3>
+                                    <p>Choose the meeting format that works best for you</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="icon-document"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Custom Proposal</h3>
+                                    <p>Receive a tailored proposal after your consultation</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="consultation-fee">
+                            <p>
+                                <strong>Consultation Fee:</strong> $100 (Applied toward your booking if you choose our services)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-image fade-in">
+                        <img data-src="assets/images/consultation.jpg" 
+                             alt="Filoxenia Moments Consultation" 
+                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3C/svg%3E">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Booking Calendar Section -->
+        <section class="booking-calendar-section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Schedule Your Consultation</h2>
+                    <p class="subtitle">Select an available date and time</p>
+                </div>
+                
+                <div class="booking-calendar-container fade-in">
+                    <div class="calendar-sidebar">
+                        <div class="month-selector">
+                            <button id="prevMonth" class="month-nav" aria-label="Previous Month"><i class="icon-arrow-left"></i></button>
+                            <h3 id="currentMonth">July 2025</h3>
+                            <button id="nextMonth" class="month-nav" aria-label="Next Month"><i class="icon-arrow-right"></i></button>
+                        </div>
+                        
+                        <div id="calendar" class="calendar">
+                            <!-- Calendar will be generated by JavaScript -->
+                        </div>
+                        
+                        <div class="calendar-legend">
+                            <div class="legend-item">
+                                <span class="legend-color available"></span>
+                                <span class="legend-text">Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color selected"></span>
+                                <span class="legend-text">Selected</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color unavailable"></span>
+                                <span class="legend-text">Unavailable</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="time-slots-container">
+                        <h3 id="selectedDate">Please select a date</h3>
+                        
+                        <div id="timeSlots" class="time-slots">
+                            <!-- Time slots will be generated by JavaScript -->
+                            <div class="no-slots-message">Please select a date to view available time slots</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Form -->
+                <div class="booking-form-container fade-in">
+                    <h2>Complete Your Booking</h2>
+                    <form id="bookingForm" class="booking-form" novalidate>
+                        <div class="selected-datetime-display">
+                            <p>Selected Date & Time: <span id="selectedDateTime">None selected</span></p>
+                        </div>
+                        
+                        <div class="form-columns">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <div class="error-message" id="fullNameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventType">Event Type <span class="required">*</span></label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Please select...</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="social">Social Gathering</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="eventTypeError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventDate">Expected Event Date</label>
+                                <input type="date" id="eventDate" name="eventDate">
+                                <div class="error-message" id="eventDateError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consultationType">Consultation Type <span class="required">*</span></label>
+                                <select id="consultationType" name="consultationType" required>
+                                    <option value="">Please select...</option>
+                                    <option value="inPerson">In-Person Meeting</option>
+                                    <option value="video">Video Call</option>
+                                    <option value="phone">Phone Call</option>
+                                </select>
+                                <div class="error-message" id="consultationTypeError"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to the <a href="privacy.html">privacy policy</a> <span class="required">*</span></label>
+                            </div>
+                            <div class="error-message" id="privacyError"></div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary" id="submitBooking" disabled>Complete Booking</button>
+                        </div>
+                        
+                        <div class="form-response" id="bookingResponse"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="subtitle">Everything you need to know about our consultation process</p>
+                </div>
+                
+                <div class="faq-container fade-in">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens during the consultation?</h3>
+                            <span class="faq-toggle"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                During our 60-minute consultation, we'll discuss your vision, preferences, 
+                                budget, and any specific requirements for your event. We'll share our approach and 
+                                how we can help bring your event to life. You'll have the opportunity to ask questions 
+                                and get to know our team better.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is the consultation fee refundable?</h3>
+                            <span class="faq-toggle"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                The $100 consultation fee is non-refundable but will be applied as a 
+                                credit toward your final package if you choose to book our services within 
+                                30 days of the consultation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How far in advance should I book my consultation?</h3>
+                            <span class="faq-toggle"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                We recommend booking your consultation at least 9-12 months before your 
+                                wedding or 6-8 months before other types of events. However, we understand 
+                                that timelines vary, and we'll do our best to accommodate your schedule.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What should I prepare for the consultation?</h3>
+                            <span class="faq-toggle"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                It's helpful to have a general idea of your event date, guest count, 
+                                budget, and any inspiration (such as Pinterest boards or magazine clippings). 
+                                The more information you can share, the more tailored our advice will be.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens after the consultation?</h3>
+                            <span class="faq-toggle"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                After our meeting, we'll prepare a customized proposal based on your needs 
+                                and preferences. We'll send this to you within 3-5 business days, and we'll 
+                                be available to answer any questions you may have about the proposal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-column">
+                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
+                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/booking.js" defer></script>
+</body>
+</html> 

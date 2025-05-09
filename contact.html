@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Filoxenia Moments for wedding and event planning services. Let us help you create your perfect event.">
+    <meta name="keywords" content="wedding planning, event planning, contact, consultation">
+    <meta name="author" content="Filoxenia Moments">
+    
+    <title>Contact Us | Filoxenia Moments</title>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="stylesheet" href="css/critical.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Contact Us | Filoxenia Moments">
+    <meta property="og:description" content="Contact Filoxenia Moments for wedding and event planning services. Let us help you create your perfect event.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://filoxeniamoments.com/contact.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="love-notes.html">Love Notes</a></li>
+                    <li><a href="contact.html" class="btn-contact active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="page-description">Let's start planning your unforgettable event</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info fade-in">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Whether you're ready to start planning your event or just have questions, we're here to help.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@filoxeniamoments.com">info@filoxeniamoments.com</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Office Hours</h3>
+                                <p>Monday - Friday: 9am - 6pm</p>
+                                <p>Weekends: By appointment only</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h3>Connect With Us</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container fade-in">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventType">Event Type <span class="required">*</span></label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Please select...</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="social">Social Gathering</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="eventTypeError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="eventDate">Event Date</label>
+                                <input type="date" id="eventDate" name="eventDate">
+                                <div class="error-message" id="eventDateError"></div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="message">Your Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <label for="privacy">I agree to the <a href="privacy.html">privacy policy</a> <span class="required">*</span></label>
+                                </div>
+                                <div class="error-message" id="privacyError"></div>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                            
+                            <div class="form-response" id="formResponse"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Our Location</h2>
+                <div class="map-container fade-in">
+                    <!-- This would be replaced with an actual map embed -->
+                    <div class="map-placeholder">
+                        <p>Map embed will be placed here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-column">
+                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
+                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</body>
+</html> 

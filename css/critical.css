@@ -1,0 +1,209 @@
+/* Critical CSS - Only styles necessary for above-the-fold content */
+
+/* Import reset */
+@import url('reset.css');
+
+/* Variables */
+:root {
+  /* Updated colors for gold, pink, and white */
+  --primary-color: #d0a90e; /* Gold */
+  --secondary-color: #d34585; /* Pink */
+  --accent-color: #f8c9d4; /* Light Pink */
+  --light-color: #ffffff; /* White */
+  --dark-color: #1a1a1a; /* Nearly Black */
+  --text-color: #333333;
+  --text-light: #ffffff;
+  
+  /* Typography */
+  --heading-font: 'Playfair Display', Georgia, serif;
+  --body-font: 'Montserrat', 'Helvetica Neue', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  
+  /* Other */
+  --container-width: 1200px;
+  --border-radius: 4px;
+}
+
+/* Base Typography */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-xs) 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation - Mobile First */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-list {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background-image: linear-gradient(rgba(212, 175, 55, 0.6), rgba(231, 84, 128, 0.6)), 
+                   url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.tagline {
+  font-family: var(--heading-font);
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--light-color);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--light-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-family: var(--body-font);
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-left: var(--spacing-md);
+  }
+  
+  .nav-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover,
+  .nav-list a.active {
+    color: var(--secondary-color);
+  }
+  
+  .btn-contact {
+    padding: 8px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+  }
+  
+  .btn-contact:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+  }
+} 
