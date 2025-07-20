@@ -1,408 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our comprehensive wedding and event planning services - Filoxenia Moments">
-    <meta name="keywords" content="wedding planning, event planning, corporate events, special occasions, wedding coordination">
-    <meta name="author" content="Filoxenia Moments">
-    
-    <title>Our Services | Filoxenia Moments</title>
-    
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="css/critical.css" as="style">
-    <link rel="stylesheet" href="css/critical.css">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/portfolio.css" media="print" onload="this.media='all'">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
-    
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Our Services | Filoxenia Moments">
-    <meta property="og:description" content="Explore our comprehensive wedding and event planning services tailored to your unique vision.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://filoxeniamoments.com/services.html">
-    <meta property="og:type" content="website">
-</head>
-<body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="love-notes.html">Love Notes</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Our Services</h1>
-            <p class="page-description">Exceptional event planning tailored to your vision</p>
-        </div>
-    </section>
+    <title>Filoxenia Moments | Services</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <!-- Main Content -->
-    <main>
-        <!-- Services Overview Section -->
-        <section class="services-section">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>What We Offer</h2>
-                    <p class="subtitle">Bringing your dream events to life</p>
-                </div>
-                <p class="section-description fade-in">
-                    At Filoxenia Moments, we offer comprehensive wedding and event planning services 
-                    that are customized to meet your specific needs. From intimate gatherings to grand 
-                    celebrations, we handle every detail with meticulous care and creative vision.
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
+      <div class="layout-container flex h-full grow flex-col">
+        <div id="header-placeholder"></div>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#caa810] tracking-light text-[32px] font-bold leading-tight" data-translate="services_page_title">Our Services</p>
+                <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="services_page_description">
+                  At Filoxenia Moments, we specialize in creating unforgettable events tailored to your unique vision. From intimate gatherings to grand celebrations, our team
+                  ensures every detail is executed flawlessly.
                 </p>
-
-                <div class="services-grid">
-                    <!-- Wedding Planning Card -->
-                    <div class="service-card fade-in" id="wedding">
-                        <div class="service-image">
-                            <img src="assets/images/marriage.png" 
-                                 alt="Wedding Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Wedding Planning</h3>
-                            <p class="service-description">
-                                Your wedding day should be everything you've dreamed of and more. Our wedding 
-                                planning services range from full-service planning to day-of coordination, ensuring 
-                                every detail is perfect.
-                            </p>
-                            <a href="#wedding-services" class="service-link">View Wedding Services</a>
-                        </div>
-                    </div>
-
-                    <!-- Corporate Events Card -->
-                    <div class="service-card fade-in" id="corporate">
-                        <div class="service-image">
-                            <img src="assets/images/event.avif" 
-                                 alt="Corporate Event Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Corporate Events</h3>
-                            <p class="service-description">
-                                From product launches to corporate galas, we create professional and memorable 
-                                corporate events that align with your company's brand and objectives.
-                            </p>
-                            <a href="#corporate-services" class="service-link">View Corporate Services</a>
-                        </div>
-                    </div>
-
-                    <!-- Special Occasions Card -->
-                    <div class="service-card fade-in" id="occasions">
-                        <div class="service-image">
-                            <img src="assets/images/cards.png" 
-                                 alt="Special Occasions Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Special Occasions</h3>
-                            <p class="service-description">
-                                Life's milestones deserve to be celebrated. From birthdays to anniversaries, 
-                                baby showers to retirement parties, we create meaningful celebrations.
-                            </p>
-                            <a href="#special-services" class="service-link">View Special Services</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Wedding Services Section -->
-        <section class="services-detail-section" id="wedding-services">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Wedding Planning Services</h2>
-                    <p class="subtitle">Creating your perfect day</p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="services-card-1 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+                <div>
+                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="weddings_title">Weddings</p>
+                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="weddings_description">
+                    Crafting bespoke wedding experiences that reflect your love story, from intimate ceremonies to grand receptions.
+                  </p>
                 </div>
-                
-                <div class="services-detail-content fade-in">
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-gem"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Full-Service Wedding Planning</h3>
-                            <p>
-                                Our comprehensive wedding planning package covers every aspect of your 
-                                special day from conception to execution. We'll be by your side throughout 
-                                the entire planning process, handling all logistics, vendor coordination, 
-                                budget management, and day-of execution.
-                            </p>
-                            <ul class="service-features">
-                                <li>Unlimited planning consultations</li>
-                                <li>Venue selection and management</li>
-                                <li>Vendor recommendations, negotiations, and management</li>
-                                <li>Budget creation and management</li>
-                                <li>Design concept and implementation</li>
-                                <li>Complete timeline planning</li>
-                                <li>Full day-of coordination (up to 12 hours)</li>
-                                <li>Rehearsal coordination</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Partial Wedding Planning</h3>
-                            <p>
-                                Perfect for couples who have already started the planning process but 
-                                need professional guidance to bring their vision together and manage 
-                                the remaining details.
-                            </p>
-                            <ul class="service-features">
-                                <li>Six planning consultations</li>
-                                <li>Vendor recommendations for remaining needs</li>
-                                <li>Design consultation and implementation</li>
-                                <li>Timeline creation</li>
-                                <li>Month-of coordination</li>
-                                <li>Rehearsal coordination</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Month-of Coordination</h3>
-                            <p>
-                                For couples who have planned their wedding but want to ensure flawless 
-                                execution on their big day, allowing them to relax and enjoy the celebration.
-                            </p>
-                            <ul class="service-features">
-                                <li>Three planning consultations</li>
-                                <li>Vendor confirmation and coordination</li>
-                                <li>Detailed timeline creation</li>
-                                <li>Rehearsal coordination</li>
-                                <li>Full day-of coordination (up to 10 hours)</li>
-                                <li>Setup and breakdown supervision</li>
-                            </ul>
-                        </div>
-                    </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="services-card-2 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+                <div>
+                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
+                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="corporate_events_description">
+                    Designing impactful corporate events that align with your brand's objectives, fostering engagement and success.
+                  </p>
                 </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="services-card-3 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+                <div>
+                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="private_parties_title">Private Parties</p>
+                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="private_parties_description">
+                    Creating memorable private parties, from elegant soirees to casual gatherings, tailored to your personal style.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="services-card-4 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+                <div>
+                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="destination_events_title">Destination Events</p>
+                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="destination_events_description">
+                    Orchestrating seamless destination events in breathtaking locations, ensuring a unique and unforgettable experience.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Corporate Services Section -->
-        <section class="services-detail-section alt-bg" id="corporate-services">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Corporate Event Services</h2>
-                    <p class="subtitle">Professional events that leave an impression</p>
-                </div>
-                
-                <div class="services-detail-content fade-in">
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Corporate Galas and Award Ceremonies</h3>
-                            <p>
-                                Sophisticated events that celebrate your company's achievements and 
-                                recognize outstanding contributions, creating a memorable experience for 
-                                employees, partners, and clients.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Product Launches and Press Events</h3>
-                            <p>
-                                Strategic planning and flawless execution for events that highlight 
-                                your new products or services, generating buzz and media attention.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Team Building and Retreats</h3>
-                            <p>
-                                Engaging experiences that strengthen relationships among your team members, 
-                                foster collaboration, and boost morale through thoughtfully designed activities.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-microphone"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Conferences and Seminars</h3>
-                            <p>
-                                Comprehensive management of professional events that facilitate knowledge 
-                                sharing, networking, and professional development for your industry.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex px-4 py-3 justify-center">
+              <a href="booking.html"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#d34585] text-[#f6e7ea] text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate" data-translate="book_consultation_button">Book a Consultation</span>
+              </a>
             </div>
-        </section>
-
-        <!-- Special Occasions Section -->
-        <section class="services-detail-section" id="special-services">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Special Occasions</h2>
-                    <p class="subtitle">Celebrating life's important moments</p>
-                </div>
-                
-                <div class="services-detail-content fade-in">
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-birthday-cake"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Milestone Birthdays</h3>
-                            <p>
-                                Whether it's a sweet sixteen, fabulous forty, or any significant birthday, 
-                                we create celebrations that honor the guest of honor and provide an 
-                                unforgettable experience for all attendees.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Anniversaries</h3>
-                            <p>
-                                Celebrate years of love and commitment with an anniversary event that 
-                                reflects your journey together, from intimate dinners to grand celebrations.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Baby Showers & Gender Reveals</h3>
-                            <p>
-                                Joyful celebrations to welcome new life, featuring thoughtful details, 
-                                memorable activities, and personalized touches that honor the parents-to-be.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-glass-cheers"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Engagement Parties</h3>
-                            <p>
-                                Begin your wedding journey with a celebratory event that announces your 
-                                commitment and allows family and friends to share in your happiness.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-detail-item">
-                        <div class="service-detail-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="service-detail-info">
-                            <h3>Graduation Celebrations</h3>
-                            <p>
-                                Honor academic achievements with a celebration that marks this significant 
-                                milestone and launches the graduate into their next chapter.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content fade-in">
-                    <h2>Ready to Begin Your Event Journey?</h2>
-                    <p>Let's create unforgettable moments together. Book a consultation to discuss your vision.</p>
-                    <div class="cta-buttons">
-                        <a href="booking.html" class="btn btn-primary">Book a Consultation</a>
-                        <a href="contact.html" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo-column">
-                    <img src="filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
-                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
-                <nav class="footer-nav">
-                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
-                </nav>
-            </div>
+          </div>
         </div>
-    </footer>
-
-    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
-    <script src="js/main.js" defer></script>
-</body>
-</html> 
+        <div id="footer-placeholder"></div>
+      </div>
+    </div>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>

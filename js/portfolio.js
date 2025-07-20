@@ -14,40 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function initGalleryFilters() {
     const filterButtons = document.querySelectorAll('.filter-button');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
     
-    if (!filterButtons.length || !galleryItems.length) return;
+    if (!filterButtons.length || !portfolioItems.length) return;
     
     // Add click event to filter buttons
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active');
+            const filter = button.dataset.filter;
+
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("active");
+                btn.classList.add("inactive");
             });
-            
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Get filter value
-            const filterValue = button.getAttribute('data-filter');
-            
-            // Filter gallery items
-            galleryItems.forEach(item => {
-                const itemCategory = item.getAttribute('data-category');
-                
-                if (filterValue === 'all' || filterValue === itemCategory) {
-                    // Show item with fade in effect
-                    item.classList.remove('hidden');
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                    }, 50);
+
+            button.classList.add("active");
+            button.classList.remove("inactive");
+
+            portfolioItems.forEach((item) => {
+                if (filter === "all" || item.dataset.category === filter) {
+                    item.style.display = "flex";
                 } else {
-                    // Hide item with fade out effect
-                    item.style.opacity = '0';
-                    setTimeout(() => {
-                        item.classList.add('hidden');
-                    }, 500);
+                    item.style.display = "none";
                 }
             });
         });

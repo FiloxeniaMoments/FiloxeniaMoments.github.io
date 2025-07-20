@@ -1,310 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our portfolio of weddings and events - Filoxenia Moments">
-    <meta name="keywords" content="wedding portfolio, event gallery, event planning portfolio, wedding photos">
-    <meta name="author" content="Filoxenia Moments">
-    
-    <title>Portfolio | Filoxenia Moments</title>
-    
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="css/critical.css" as="style">
-    <link rel="stylesheet" href="css/critical.css">
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/portfolio.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/social.css" media="print" onload="this.media='all'">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
-    
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Portfolio | Filoxenia Moments">
-    <meta property="og:description" content="Explore our portfolio of weddings and events - Filoxenia Moments">
-    <meta property="og:image" content="assets/images/portfolio-og-image.jpg">
-    <meta property="og:url" content="https://filoxeniamoments.com/portfolio.html">
-    <meta property="og:type" content="website">
-</head>
-<body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </a>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Filoxenia Moments | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
+      <div class="layout-container flex h-full grow flex-col">
+        <div id="header-placeholder"></div>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#caa810] tracking-light text-[32px] font-bold leading-tight min-w-72" data-translate="portfolio_page_title">Our Portfolio</p></div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <button class="filter-button active flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="all">
+                <p class="text-sm font-medium leading-normal" data-translate="all_category">All</p>
+              </button>
+              <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="weddings">
+                <p class="text-sm font-medium leading-normal" data-translate="weddings_category">Weddings</p>
+              </button>
+              <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="corporate">
+                <p class="text-sm font-medium leading-normal" data-translate="corporate_events_category">Corporate Events</p>
+              </button>
+              <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="private">
+                <p class="text-sm font-medium leading-normal" data-translate="private_parties_category">Private Parties</p>
+              </button>
             </div>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="love-notes.html">Love Notes</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
+                <div
+                  class="portfolio-card-1 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="elegant_garden_wedding_title">Elegant Garden Wedding</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="elegant_garden_wedding_description">A beautiful outdoor wedding with a rustic theme.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
+                <div
+                  class="portfolio-card-2 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="corporate_gala_title">Corporate Gala at the Grand Ballroom</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="corporate_gala_description">A sophisticated corporate event with a modern design.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
+                <div
+                  class="portfolio-card-3 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="intimate_birthday_celebration_title">Intimate Birthday Celebration</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="intimate_birthday_celebration_description">A cozy and personalized birthday party.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
+                <div
+                  class="portfolio-card-4 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="luxury_destination_wedding_title">Luxury Destination Wedding</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="luxury_destination_wedding_description">A lavish wedding at a tropical resort.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
+                <div
+                  class="portfolio-card-5 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="tech_conference_title">Tech Conference in the City</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="tech_conference_description">A cutting-edge tech conference with industry leaders.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
+                <div
+                  class="portfolio-card-6 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="anniversary_dinner_title">Anniversary Dinner</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="anniversary_dinner_description">A romantic dinner for a special anniversary.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
+                <div
+                  class="portfolio-card-7 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="beachfront_wedding_title">Beachfront Wedding</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="beachfront_wedding_description">A relaxed and scenic wedding by the sea.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
+                <div
+                  class="portfolio-card-8 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="product_launch_title">Product Launch Event</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="product_launch_description">An exciting product launch with interactive displays.</p>
+                </div>
+              </div>
+              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
+                <div
+                  class="portfolio-card-9 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                ></div>
+                <div>
+                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="engagement_party_title">Engagement Party</p>
+                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="engagement_party_description">A fun and memorable engagement celebration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Our Portfolio</h1>
-            <p class="page-description">Explore our collection of weddings and events</p>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <section class="portfolio-section">
-            <div class="container">
-                <!-- Portfolio Filters -->
-                <div class="portfolio-filters fade-in">
-                    <button class="filter-button active" data-filter="all">All</button>
-                    <button class="filter-button" data-filter="weddings">Weddings</button>
-                    <button class="filter-button" data-filter="corporate">Corporate</button>
-                    <button class="filter-button" data-filter="social">Social Events</button>
-                </div>
-                
-                <!-- Portfolio Gallery -->
-                <div class="portfolio-gallery fade-in">
-                    <!-- Wedding 1 -->
-                    <div class="gallery-item" data-category="weddings">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/wedding-1.jpg" 
-                                 alt="Beachside Wedding" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Sarah & Michael</h3>
-                                <p>Beachside Wedding</p>
-                                <a href="#" class="gallery-link" data-item="wedding-1">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Wedding 2 -->
-                    <div class="gallery-item" data-category="weddings">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/wedding-2.jpg" 
-                                 alt="Garden Wedding" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Emily & John</h3>
-                                <p>Garden Wedding</p>
-                                <a href="#" class="gallery-link" data-item="wedding-2">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Wedding 3 -->
-                    <div class="gallery-item" data-category="weddings">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/wedding-3.jpg" 
-                                 alt="Winter Wedding" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Jessica & Mark</h3>
-                                <p>Winter Wedding</p>
-                                <a href="#" class="gallery-link" data-item="wedding-3">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Corporate 1 -->
-                    <div class="gallery-item" data-category="corporate">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/corporate-1.jpg" 
-                                 alt="Annual Gala" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>TechCorp</h3>
-                                <p>Annual Gala</p>
-                                <a href="#" class="gallery-link" data-item="corporate-1">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Corporate 2 -->
-                    <div class="gallery-item" data-category="corporate">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/corporate-2.jpg" 
-                                 alt="Product Launch" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>InnovateCo</h3>
-                                <p>Product Launch</p>
-                                <a href="#" class="gallery-link" data-item="corporate-2">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social 1 -->
-                    <div class="gallery-item" data-category="social">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/social-1.jpg" 
-                                 alt="50th Anniversary" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Robert & Eleanor</h3>
-                                <p>50th Anniversary</p>
-                                <a href="#" class="gallery-link" data-item="social-1">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social 2 -->
-                    <div class="gallery-item" data-category="social">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/social-2.jpg" 
-                                 alt="Charity Fundraiser" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Hope Foundation</h3>
-                                <p>Charity Fundraiser</p>
-                                <a href="#" class="gallery-link" data-item="social-2">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Wedding 4 -->
-                    <div class="gallery-item" data-category="weddings">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/wedding-4.jpg" 
-                                 alt="Rustic Barn Wedding" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Lisa & Thomas</h3>
-                                <p>Rustic Barn Wedding</p>
-                                <a href="#" class="gallery-link" data-item="wedding-4">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Corporate 3 -->
-                    <div class="gallery-item" data-category="corporate">
-                        <div class="gallery-image">
-                            <img data-src="assets/images/portfolio/corporate-3.jpg" 
-                                 alt="Team Retreat" 
-                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3C/svg%3E">
-                        </div>
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>GlobalCorp</h3>
-                                <p>Team Retreat</p>
-                                <a href="#" class="gallery-link" data-item="corporate-3">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Load More Button -->
-                <div class="load-more-container fade-in">
-                    <button class="btn btn-outline load-more-btn">Load More</button>
-                </div>
-                
-                <!-- Portfolio Detail Modal -->
-                <div class="portfolio-modal" id="portfolioModal">
-                    <div class="modal-content">
-                        <button class="modal-close">&times;</button>
-                        <div class="modal-body">
-                            <!-- Content will be loaded dynamically -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Social Share Section -->
-        <section class="social-share-section">
-            <div class="container">
-                <div class="social-share fade-in">
-                    <h3 class="social-share-title">Share Our Portfolio</h3>
-                    <div class="share-buttons">
-                        <a href="#" class="share-button share-facebook">
-                            <i class="icon-facebook"></i> Facebook
-                        </a>
-                        <a href="#" class="share-button share-twitter">
-                            <i class="icon-twitter"></i> Twitter
-                        </a>
-                        <a href="#" class="share-button share-pinterest">
-                            <i class="icon-pinterest"></i> Pinterest
-                        </a>
-                        <a href="#" class="share-button share-email">
-                            <i class="icon-email"></i> Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content fade-in">
-                    <h2>Ready to Create Your Perfect Event?</h2>
-                    <p>Let's start planning your dream event today.</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo-column">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
-                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
-                <nav class="footer-nav">
-                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
-    <script src="js/main.js" defer></script>
-    <script src="js/portfolio.js" defer></script>
-    <script src="js/social.js" defer></script>
-</body>
+        <div id="footer-placeholder"></div>
+      </div>
+    </div>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
 </html> 

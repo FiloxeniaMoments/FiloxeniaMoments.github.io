@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -16,40 +18,7 @@
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f1f1] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#171213]">
-            <img class="h-10" src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" />
-            <h2 class="text-[#caa810] text-lg font-bold leading-tight tracking-[-0.015em]" data-translate="filoxenia_moments_header">Filoxenia Moments</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#caa810] text-sm font-medium leading-normal" href="index.html" data-translate="home_link">Home</a>
-              <a class="text-[#caa810] text-sm font-medium leading-normal" href="services.html" data-translate="services_link">Services</a>
-              <a class="text-[#caa810] text-sm font-medium leading-normal" href="portfolio.html" data-translate="portfolio_link">Portfolio</a>
-              <a class="text-[#caa810] text-sm font-medium leading-normal" href="about.html" data-translate="about_us_link">About Us</a>
-              <a class="text-[#caa810] text-sm font-medium leading-normal" href="contact.html" data-translate="contact_link">Contact</a>
-            </div>
-            <div class="relative">
-              <button id="language-switcher" class="flex items-center justify-center rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea]">
-                <svg id="language-icon" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 7.643a6.5 6.5 0 118.336 8.714 8.02 8.02 0 00-2.332-1.503A6.472 6.472 0 014.332 7.643zm11.336-1.286a6.5 6.5 0 00-8.336 8.714 8.02 8.02 0 012.332-1.503A6.472 6.472 0 0015.668 6.357z" clip-rule="evenodd" />
-                </svg>
-                <span id="language-text" class="ml-2" data-translate="language_english">English</span>
-              </button>
-              <div id="language-menu" class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg hidden">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="en" data-translate="language_english_menu">English</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="de" data-translate="language_german_menu">German</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="el" data-translate="language_greek_menu">Greek</a>
-              </div>
-            </div>
-            <a
-              href="contact.html"
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea] text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate" data-translate="plan_your_event_button">Plan Your Event</span>
-            </a>
-          </div>
-        </header>
+        <div id="header-placeholder"></div>
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4">
@@ -128,51 +97,11 @@
             </div>
           </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <div class="flex flex-col items-center gap-6 px-5 py-10 text-center @container">
-              <img class="h-16" src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" />
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#83676d] text-base font-normal leading-normal min-w-40" href="contact.html" data-translate="contact_us_footer_link">Contact Us</a>
-                <a class="text-[#83676d] text-base font-normal leading-normal min-w-40" href="privacy.html" data-translate="privacy_policy_footer_link">Privacy Policy</a>
-                <a class="text-[#83676d] text-base font-normal leading-normal min-w-40" href="terms.html" data-translate="terms_of_service_footer_link">Terms of Service</a>
-              </div>
-              <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://www.instagram.com/filoxenia_moments/">
-                  <div class="text-[#83676d]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="https://www.facebook.com/filoxenia.moments">
-                  <div class="text-[#83676d]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="https://x.com/filoxenia_moments">
-                  <div class="text-[#83676d]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <p class="text-[#83676d] text-base font-normal leading-normal" data-translate="copyright_footer">© 2025 Filoxenia Moments. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
+        <div id="footer-placeholder"></div>
       </div>
     </div>
     <script src="js/translations.js"></script>
     <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
   </body>
 </html>

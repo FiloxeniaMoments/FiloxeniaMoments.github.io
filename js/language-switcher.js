@@ -1,7 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initializeLanguageSwitcher() {
   const languageSwitcher = document.getElementById("language-switcher");
   const languageMenu = document.getElementById("language-menu");
   const languageText = document.getElementById("language-text");
+
+  if (!languageSwitcher || !languageMenu || !languageText) {
+    console.error("Language switcher elements not found.");
+    return;
+  }
 
   const setLanguage = (lang) => {
     document.querySelectorAll("[data-translate]").forEach((element) => {
@@ -50,4 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const savedLang = localStorage.getItem("language") || "en";
   setLanguage(savedLang);
-}); 
+}
+
+// Check if the script is loaded dynamically
+if (document.readyState === 'loading') {
+  document.addEventListener("DOMContentLoaded", initializeLanguageSwitcher);
+} else {
+  initializeLanguageSwitcher();
+} 
