@@ -41,7 +41,7 @@ const translations = {
     message_placeholder: "Enter your message",
     submit_button: "Submit",
     contact_information_title: "Contact Information",
-    contact_email: "Email: events@filoxeniamoments.com",
+    contact_email: "Email: filoxeniamoments@gmail.com",
     contact_phone: "Phone: (555) 123-4567",
   },
   de: {
@@ -86,7 +86,7 @@ const translations = {
     message_placeholder: "Geben Sie Ihre Nachricht ein",
     submit_button: "einreichen",
     contact_information_title: "Kontaktinformation",
-    contact_email: "Email: events@filoxeniamoments.com",
+    contact_email: "Email: filoxeniamoments@gmail.com",
     contact_phone: "Telefon: (555) 123-4567",
   },
   el: {
@@ -131,7 +131,7 @@ const translations = {
     message_placeholder: "Εισαγάγετε το μήνυμά σας",
     submit_button: "υποβάλλουν",
     contact_information_title: "Στοιχεία επικοινωνίας",
-    contact_email: "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ: events@filoxeniamoments.com",
+    contact_email: "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ: filoxeniamoments@gmail.com",
     contact_phone: "Τηλέφωνο: (555) 123-4567",
   },
 }; 
