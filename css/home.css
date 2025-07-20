@@ -1,0 +1,23 @@
+.font-serif-sans {
+  font-family: "Noto Serif", "Noto Sans", sans-serif;
+}
+
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuARz2MjIert2hpGPJUPK7yRSQLKBhI7YRJtht_wfCESLH5qAkV-djWFAetT8XVGSIoUKSaX_A4MU74p3KuVBOwEeIc7wDLXXpGIJciZUQVz66tLqsMDTyI999W-2-iDxzFnZ_-eELzwLtZv0FnvWByfXZnDiwoA6Yj1yzYcDoJzGKuV0j8LhKnTiEU68Cy1rlQJFI1n8egwJVGZPT1Hh1D8cYeEC9L7eoNrO7I_XA15rPSAY0kFyZk6aJDU_w9Rn6n2WVjzaJIo3kKV");
+}
+
+.services-card-1 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOXhAr37ffXiDKiu7-PE9cd67FHYoH2OWHXcjnhiFcU4yIKehaobMyW0Q9yq1Q5FhtnqGWJVOna-liwauUwEE9LmQdSXe3FOBD2eGZyQCSUDtdfl6JwP0xmBq5dRj2MxC99YbA2IpAkvBp0uJM3qQHWnGGcdFuR0tEDCZd7oZMKFKA2HcorcdFxlo2PPmx5IAZ-eJwvKJpWK8fBRPiLRDE_GuapiZVE_wl4887UMA-32n2Zi3OMOntZFbFFsQ_48OjNdNjGL5Iplmf");
+}
+
+.services-card-2 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlgh3Vp1pSqWYLUjx8G3YUZ-XAf57VF8R-WQ5pv-cC26Hb98xlOLaH7C-gH8ZnuMFtT7fup6T3J3HvfluhRaQHuqZovjI4Wcait99cwgF-sIH1fA4yKRJdjcuP7k1JZrJGuhPMzFRMzDBK7qHBgkUWNwHZc2tiCgJTo48UG1CRCq81MUpLnHworw1MCjnLucDoqkDzG6oFqbOZDwG7ulVW6Q_iLGisXLyg9oAJelIpDpmr2ol9vczDfPuclLb4B4tuEQJJhvSxqDxb");
+}
+
+.services-card-3 {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCL5dvJjhbd6LZIcPU2h6k6hsIu_Jmp4s0VV6Z1JSrszvHTN86SLUxskaVEbRxj74uJaaHNKtTm24BI2bg1okegc_Nq6IwdBoBakwlj7I6tDr5oasgXebBjGB35fQUO8ItIXptrbVuKKJz0RxaOZsUuAnsicqz65kKJQ-3memX0F__Yr7CL__wuXzyDHJrOOWAjYoDAM1pgKV_AogDYz02kp9CwUYK5gu2T7rKaNN4gjVTamCgAK5RDfHruXhI1OQoBtPe27MAKMiyV");
+}
+
+.contact-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD04dhgELgrcontBWiROQvjO6i5_RbGv6PxW7igMOu3W1HcvGIv7kL7Q1N2ovdHtsBB0Pc7qVzxq-dmclXrDTMGeGklVDFja7VUw_34LDTdQeXHnYVsssaG1_rJ6r6lco3zvLsd7yTKqPmlMXnALKN88f3iE7fijLeLVGajXiekX_JUe5gojWGOX_neh9pMlLj_23DfPkxsujiFz2CwXtANS-U9EVFde0Usb7W5P0spgUAbdLM3vv9w7KCBEI-MrNrZpwsPXc3x9zgB");
+} 
