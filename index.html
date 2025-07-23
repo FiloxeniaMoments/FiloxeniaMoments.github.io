@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -9,93 +10,69 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="css/output.css" />
     <title>Filoxenia Moments</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
-      <div class="layout-container flex h-full grow flex-col">
+    <div class="layout-root">
+      <div class="layout-container">
         <div id="header-placeholder"></div>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="hero-banner flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
-                >
+        <div class="layout-content-wrapper">
+          <div class="layout-content">
+            <div class="responsive-container">
+              <div class="responsive-section">
+                <div class="hero-content">
                   <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                      data-translate="filoxenia_moments_title"
-                    >
+                    <h1 class="hero-title" data-translate="filoxenia_moments_title">
                       Filoxenia Moments
                     </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal" data-translate="boutique_elegance_subtitle">
+                    <h2 class="hero-subtitle" data-translate="boutique_elegance_subtitle">
                       Boutique Elegance meets Warm Hospitality
                     </h2>
                   </div>
-                  <a
-                    href="contact.html"
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#d34585] text-[#f6e7ea] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
+                  <a href="contact.html" class="primary-button">
                     <span class="truncate" data-translate="plan_your_event_button_main">Plan Your Event</span>
                   </a>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#caa810] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" data-translate="our_services_title">Our Services</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="services-card-1 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                ></div>
+            <h2 class="heading-section" data-translate="our_services_title">Our Services</h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-card-image services-card-1"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="weddings_title">Weddings</p>
-                  <p class="text-[#83676d] text-sm font-normal leading-normal" data-translate="weddings_description">Creating unforgettable wedding experiences tailored to your unique love story.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="weddings_title">Weddings</p>
+                  <p class="text-muted" data-translate="weddings_description">Creating unforgettable wedding experiences tailored to your unique love story.</p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="services-card-2 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                ></div>
+              <div class="service-card">
+                <div class="service-card-image services-card-2"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
-                  <p class="text-[#83676d] text-sm font-normal leading-normal" data-translate="corporate_events_description">Planning seamless and sophisticated corporate events that leave a lasting impression.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
+                  <p class="text-muted" data-translate="corporate_events_description">Planning seamless and sophisticated corporate events that leave a lasting impression.</p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="services-card-3 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                ></div>
+              <div class="service-card">
+                <div class="service-card-image services-card-3"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="private_parties_title">Private Parties</p>
-                  <p class="text-[#83676d] text-sm font-normal leading-normal" data-translate="private_parties_description">Designing intimate and memorable private parties that reflect your personal style.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="private_parties_title">Parties</p>
+                  <p class="text-muted" data-translate="private_parties_description">Designing memorable private parties that reflect your personal style.</p>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#caa810] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" data-translate="contact_us_title">Contact Us</h2>
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="contact-banner flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
-                >
+            <h2 class="heading-section" data-translate="contact_us_title">Contact Us</h2>
+            <div class="responsive-container">
+              <div class="responsive-section">
+                <div class="contact-banner">
                   <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                      data-translate="beautiful_together_title"
-                    >
+                    <h1 class="hero-title" data-translate="beautiful_together_title">
                       Let's Create Something Beautiful Together
                     </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal" data-translate="reach_out_subtitle">
+                    <h2 class="hero-subtitle" data-translate="reach_out_subtitle">
                       Reach out to us to discuss your event needs and how we can make your vision a reality.
                     </h2>
                   </div>
-                  <a
-                    href="contact.html"
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#d34585] text-[#f6e7ea] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
+                  <a href="contact.html" class="primary-button">
                     <span class="truncate" data-translate="contact_us_button">Contact Us</span>
                   </a>
                 </div>

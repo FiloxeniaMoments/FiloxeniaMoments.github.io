@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const loadComponent = (url, placeholderId) => {
-    return fetch(url)
+    return fetch(`./${url}`)
       .then((response) => response.text())
       .then((data) => {
         const placeholder = document.getElementById(placeholderId);
