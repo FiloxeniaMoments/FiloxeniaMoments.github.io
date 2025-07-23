@@ -118,11 +118,23 @@
     background-image: url("./pictures/parties.jpg");
   }
 
+  .services-card-baptism {
+    background-image: url("./pictures/Baptism.jpg");
+  }
+
+  .about-founder-image {
+    background-image: url("./pictures/founder_efi.jpg");
+  }
+
   /* Typography Components */
   .heading-section {
     @apply text-accent text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5;
   }
 
+  .heading-section {
+    @apply text-accent text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5;
+  }
+  
   .text-muted {
     @apply text-accent-muted text-sm font-normal leading-normal;
   }
@@ -142,6 +154,10 @@
 
   .layout-content {
     @apply flex flex-col max-w-[960px] flex-1;
+  }
+
+  .text-accent {
+    @apply text-[#caa810];
   }
 
   /* Existing Components */

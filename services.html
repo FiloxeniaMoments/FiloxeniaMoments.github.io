@@ -7,70 +7,64 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
-
     <title>Filoxenia Moments | Services</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
-      <div class="layout-container flex h-full grow flex-col">
+    <div class="layout-root">
+      <div class="layout-container">
         <div id="header-placeholder"></div>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="layout-content-wrapper">
+          <div class="layout-content">
             <div class="flex flex-wrap justify-between gap-3 p-4">
               <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-[#caa810] tracking-light text-[32px] font-bold leading-tight" data-translate="services_page_title">Our Services</p>
-                <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="services_page_description">
+                <p class="heading-section text-4xl" data-translate="services_page_title">Our Services</p>
+                <p class="text-muted" data-translate="services_page_description">
                   At Filoxenia Moments, we specialize in creating unforgettable events tailored to your unique vision. From intimate gatherings to grand celebrations, our team
                   ensures every detail is executed flawlessly.
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="services-card-1 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-card-image services-card-1"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="weddings_title">Weddings</p>
-                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="weddings_description">
+                  <p class="text-accent text-base font-medium leading-normal" data-translate="weddings_title">Weddings</p>
+                  <p class="text-muted" data-translate="weddings_description">
                     Crafting bespoke wedding experiences that reflect your love story, from intimate ceremonies to grand receptions.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="services-card-2 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+              <div class="service-card">
+                <div class="service-card-image services-card-2"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
-                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="corporate_events_description">
+                  <p class="text-accent text-base font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
+                  <p class="text-muted" data-translate="corporate_events_description">
                     Designing impactful corporate events that align with your brand's objectives, fostering engagement and success.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="services-card-3 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+              <div class="service-card">
+                <div class="service-card-image services-card-3"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="private_parties_title">Private Parties</p>
-                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="private_parties_description">
+                  <p class="text-accent text-base font-medium leading-normal" data-translate="private_parties_title">Private Parties</p>
+                  <p class="text-muted" data-translate="private_parties_description">
                     Creating memorable private parties, from elegant soirees to casual gatherings, tailored to your personal style.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="services-card-4 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"></div>
+              <div class="service-card">
+                <div class="service-card-image services-card-baptism"></div>
                 <div>
-                  <p class="text-[#caa810] text-base font-medium leading-normal" data-translate="destination_events_title">Destination Events</p>
-                  <p class="text-[#807b6b] text-sm font-normal leading-normal" data-translate="destination_events_description">
-                    Orchestrating seamless destination events in breathtaking locations, ensuring a unique and unforgettable experience.
+                  <p class="text-accent text-base font-medium leading-normal" data-translate="baptism_title">Christian Baptism</p>
+                  <p class="text-muted" data-translate="baptism_description">
+                    Celebrating the sacred tradition of Christian baptism with reverence, joy, and attention to every meaningful detail.
                   </p>
                 </div>
               </div>
             </div>
             <div class="flex px-4 py-3 justify-center">
-              <a href="booking.html"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#d34585] text-[#f6e7ea] text-base font-bold leading-normal tracking-[0.015em]"
-              >
+              <a href="booking.html" class="primary-button">
                 <span class="truncate" data-translate="book_consultation_button">Book a Consultation</span>
               </a>
             </div>
