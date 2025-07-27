@@ -10,31 +10,35 @@
 
   /* Portfolio Components */
   .portfolio-card-1 {
-    background-image: url("../assets/pictures/portfolio-1.jpg");
+    background-image: url("./pictures/garten-wedd.webp");
   }
   .portfolio-card-2 {
-    background-image: url("../assets/pictures/portfolio-2.jpg");
+    background-image: url("./pictures/beach_wedd.jpg");
   }
   .portfolio-card-3 {
-    background-image: url("../assets/pictures/portfolio-3.jpg");
+    background-image: url("./pictures/birthday.jpg");
   }
   .portfolio-card-4 {
-    background-image: url("../assets/pictures/portfolio-4.jpg");
+    background-image: url("./pictures/luxus wedding.jpg");
   }
   .portfolio-card-5 {
-    background-image: url("../assets/pictures/portfolio-5.jpg");
+    background-image: url("./pictures/corporate.jpg");
   }
   .portfolio-card-6 {
-    background-image: url("../assets/pictures/portfolio-6.jpg");
+    background-image: url("./pictures/Anniversary.jpg");
   }
   .portfolio-card-7 {
-    background-image: url("../assets/pictures/portfolio-7.jpg");
+    background-image: url("./pictures/beach_wedd.jpg");
   }
   .portfolio-card-8 {
-    background-image: url("../assets/pictures/portfolio-8.jpg");
+    background-image: url("./pictures/tech.jpg");
   }
   .portfolio-card-9 {
-    background-image: url("../assets/pictures/portfolio-9.jpg");
+    background-image: url("./pictures/Engangement.jpg");
+  }
+
+  .portfolio-card-baptism {
+    background-image: url("./pictures/Baptism.jpg");
   }
 
   .filter-button.active {
@@ -160,6 +164,31 @@
     @apply text-[#caa810];
   }
 
+  /* Booking Page Components */
+  .booking-benefit-card {
+    @apply flex flex-col gap-2 flex-1 min-w-64;
+  }
+
+  .booking-benefit-number {
+    @apply w-8 h-8 bg-accent rounded-full flex items-center justify-center;
+  }
+
+  .booking-benefit-title {
+    @apply text-accent font-semibold text-lg;
+  }
+
+  .booking-alternative-section {
+    @apply flex flex-col gap-3 p-4 bg-gray-50 rounded-lg;
+  }
+
+  .booking-contact-link {
+    @apply flex items-center gap-2 text-accent hover:text-primary transition-colors;
+  }
+
+  .booking-widget-container {
+    @apply w-full min-h-[600px] rounded-lg overflow-hidden border border-gray-200;
+  }
+
   /* Existing Components */
   .container-padding {
     padding: 0;
@@ -197,5 +226,31 @@
     .primary-button {
       @apply h-12 px-5 text-base font-bold leading-normal tracking-[0.015em];
     }
+  }
+}
+
+@layer components {
+  .privacy-container h2 {
+    @apply text-accent text-2xl font-bold mt-10 mb-4;
+  }
+  
+  .privacy-container h3 {
+    @apply text-accent-muted text-xl font-semibold mt-6 mb-3;
+  }
+  
+  .privacy-container p, .privacy-container ul {
+    @apply text-muted mb-4 leading-relaxed;
+  }
+  
+  .privacy-container ul {
+    @apply list-disc pl-5;
+  }
+  
+  .privacy-container .highlight {
+    @apply bg-pink-50 border-l-4 border-primary p-4 rounded-md my-6;
+  }
+  
+  .privacy-container .date {
+    @apply text-sm italic text-accent-muted mb-6;
   }
 } 

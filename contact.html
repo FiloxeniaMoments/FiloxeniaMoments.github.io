@@ -27,11 +27,12 @@
                 </p>
               </div>
             </div>
-            <form>
+            <form id="custom-form" action="https://hook.eu2.make.com/wpfwzgvf3psr7jtoa7f26g3x4x4lg8dd" method="POST">
               <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
                 <label class="flex flex-col min-w-40 flex-1">
                   <p class="text-accent text-base font-medium leading-normal pb-2" data-translate="name_label">Name</p>
                   <input
+                    name="name"
                     placeholder="Enter your name"
                     class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-muted focus:outline-0 focus:ring-0 border border-[#e5e3dc] bg-white focus:border-[#e5e3dc] h-14 placeholder:text-muted p-[15px] text-base font-normal leading-normal"
                     value=""
@@ -43,6 +44,8 @@
                 <label class="flex flex-col min-w-40 flex-1">
                   <p class="text-accent text-base font-medium leading-normal pb-2" data-translate="email_label">Email</p>
                   <input
+                    name="email"
+                    type="email"
                     placeholder="Enter your email"
                     class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-muted focus:outline-0 focus:ring-0 border border-[#e5e3dc] bg-white focus:border-[#e5e3dc] h-14 placeholder:text-muted p-[15px] text-base font-normal leading-normal"
                     value=""
@@ -54,6 +57,7 @@
                 <label class="flex flex-col min-w-40 flex-1">
                   <p class="text-accent text-base font-medium leading-normal pb-2" data-translate="phone_number_label">Phone Number</p>
                   <input
+                    name="phone"
                     placeholder="Enter your phone number"
                     class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-muted focus:outline-0 focus:ring-0 border border-[#e5e3dc] bg-white focus:border-[#e5e3dc] h-14 placeholder:text-muted p-[15px] text-base font-normal leading-normal"
                     value=""
@@ -65,6 +69,7 @@
                 <label class="flex flex-col min-w-40 flex-1">
                   <p class="text-accent text-base font-medium leading-normal pb-2" data-translate="message_label">Message</p>
                   <textarea
+                    name="message"
                     placeholder="Enter your message"
                     class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-muted focus:outline-0 focus:ring-0 border border-[#e5e3dc] bg-white focus:border-[#e5e3dc] min-h-36 placeholder:text-muted p-[15px] text-base font-normal leading-normal"
                     data-translate-placeholder="message_placeholder"
@@ -77,6 +82,7 @@
                 </button>
               </div>
             </form>
+              
             <h3 class="text-accent text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4" data-translate="contact_information_title">
               Contact Information
             </h3>

@@ -597,39 +597,39 @@ video {
 /* Portfolio Components */
 
 .portfolio-card-1 {
-  background-image: url("../assets/pictures/portfolio-1.jpg");
+  background-image: url("./pictures/garten-wedd.webp");
 }
 
 .portfolio-card-2 {
-  background-image: url("../assets/pictures/portfolio-2.jpg");
+  background-image: url("./pictures/beach_wedd.jpg");
 }
 
 .portfolio-card-3 {
-  background-image: url("../assets/pictures/portfolio-3.jpg");
+  background-image: url("./pictures/birthday.jpg");
 }
 
 .portfolio-card-4 {
-  background-image: url("../assets/pictures/portfolio-4.jpg");
+  background-image: url("./pictures/luxus wedding.jpg");
 }
 
 .portfolio-card-5 {
-  background-image: url("../assets/pictures/portfolio-5.jpg");
+  background-image: url("./pictures/corporate.jpg");
 }
 
 .portfolio-card-6 {
-  background-image: url("../assets/pictures/portfolio-6.jpg");
-}
-
-.portfolio-card-7 {
-  background-image: url("../assets/pictures/portfolio-7.jpg");
+  background-image: url("./pictures/Anniversary.jpg");
 }
 
 .portfolio-card-8 {
-  background-image: url("../assets/pictures/portfolio-8.jpg");
+  background-image: url("./pictures/tech.jpg");
 }
 
 .portfolio-card-9 {
-  background-image: url("../assets/pictures/portfolio-9.jpg");
+  background-image: url("./pictures/Engangement.jpg");
+}
+
+.portfolio-card-baptism {
+  background-image: url("./pictures/Baptism.jpg");
 }
 
 .filter-button.active {
@@ -831,6 +831,71 @@ video {
   color: rgb(202 168 16 / var(--tw-text-opacity, 1));
 }
 
+/* Booking Page Components */
+
+.booking-benefit-card {
+  display: flex;
+  min-width: 16rem;
+  flex: 1 1 0%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.booking-benefit-number {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 168 16 / var(--tw-bg-opacity, 1));
+}
+
+.booking-benefit-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(202 168 16 / var(--tw-text-opacity, 1));
+}
+
+.booking-alternative-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  padding: 1rem;
+}
+
+.booking-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(202 168 16 / var(--tw-text-opacity, 1));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.booking-contact-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(211 69 133 / var(--tw-text-opacity, 1));
+}
+
+.booking-widget-container {
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
 /* Existing Components */
 
 .hero-title {
@@ -906,6 +971,62 @@ video {
   }
 }
 
+.privacy-container h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(202 168 16 / var(--tw-text-opacity, 1));
+}
+
+.privacy-container h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(131 103 109 / var(--tw-text-opacity, 1));
+}
+
+.privacy-container p, .privacy-container ul {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(131 103 109 / var(--tw-text-opacity, 1));
+  margin-bottom: 1rem;
+  line-height: 1.625;
+}
+
+.privacy-container ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.privacy-container .highlight {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.375rem;
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(211 69 133 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 242 248 / var(--tw-bg-opacity, 1));
+  padding: 1rem;
+}
+
+.privacy-container .date {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(131 103 109 / var(--tw-text-opacity, 1));
+}
+
 .static {
   position: static;
 }
@@ -920,6 +1041,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-2 {
@@ -940,10 +1065,6 @@ video {
 
 .table {
   display: table;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -1065,10 +1186,6 @@ video {
 
 .resize {
   resize: both;
-}
-
-.grid-cols-\[repeat\(auto-fit\2c minmax\(158px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(158px,1fr));
 }
 
 .flex-col {
@@ -1218,6 +1335,10 @@ video {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-\[15px\] {
   padding: 15px;
 }
@@ -1270,6 +1391,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1304,10 +1429,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1323,6 +1444,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1335,8 +1461,8 @@ video {
   font-weight: 400;
 }
 
-.italic {
-  font-style: italic;
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-normal {
@@ -1360,19 +1486,9 @@ video {
   color: rgb(23 18 19 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#181611\] {
-  --tw-text-opacity: 1;
-  color: rgb(24 22 17 / var(--tw-text-opacity, 1));
-}
-
 .text-\[\#83676d\] {
   --tw-text-opacity: 1;
   color: rgb(131 103 109 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#888063\] {
-  --tw-text-opacity: 1;
-  color: rgb(136 128 99 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#caa810\] {
@@ -1398,6 +1514,11 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(211 69 133 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .shadow-lg {

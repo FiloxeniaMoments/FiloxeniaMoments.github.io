@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -7,26 +10,33 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
-
+    <link rel="stylesheet" href="css/output.css" />
     <title>Filoxenia Moments | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
-      <div class="layout-container flex h-full grow flex-col">
+    <div class="layout-root">
+      <div class="layout-container">
         <div id="header-placeholder"></div>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#caa810] tracking-light text-[32px] font-bold leading-tight min-w-72" data-translate="portfolio_page_title">Our Portfolio</p></div>
+        <div class="layout-content-wrapper">
+          <div class="layout-content">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="heading-section text-4xl min-w-72" data-translate="portfolio_page_title">Our Portfolio</p>
+            </div>
+            
+            <!-- Filter Buttons -->
             <div class="flex gap-3 p-3 flex-wrap pr-4">
               <button class="filter-button active flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="all">
                 <p class="text-sm font-medium leading-normal" data-translate="all_category">All</p>
               </button>
+              <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="engagements">
+                <p class="text-sm font-medium leading-normal" data-translate="engagements_category">Engagements</p>
+              </button>
               <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="weddings">
                 <p class="text-sm font-medium leading-normal" data-translate="weddings_category">Weddings</p>
+              </button>
+              <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="religious">
+                <p class="text-sm font-medium leading-normal" data-translate="religious_events_category">Religious Events</p>
               </button>
               <button class="filter-button inactive flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg px-4" data-filter="corporate">
                 <p class="text-sm font-medium leading-normal" data-translate="corporate_events_category">Corporate Events</p>
@@ -35,93 +45,104 @@
                 <p class="text-sm font-medium leading-normal" data-translate="private_parties_category">Private Parties</p>
               </button>
             </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
-                <div
-                  class="portfolio-card-1 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+            
+            <!-- Portfolio Grid - First Row -->
+            <div class="services-grid">
+              <!-- Engagement Party (moved to first position) -->
+              <div class="service-card portfolio-item" data-category="engagements">
+                <div class="service-card-image portfolio-card-9"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="elegant_garden_wedding_title">Elegant Garden Wedding</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="elegant_garden_wedding_description">A beautiful outdoor wedding with a rustic theme.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="engagement_party_title">Engagement Party</p>
+                  <p class="text-muted" data-translate="engagement_party_description">A fun and memorable engagement celebration.</p>
                 </div>
               </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
-                <div
-                  class="portfolio-card-2 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+              
+              <!-- Elegant Garden Wedding -->
+              <div class="service-card portfolio-item" data-category="weddings">
+                <div class="service-card-image portfolio-card-1"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="corporate_gala_title">Corporate Gala at the Grand Ballroom</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="corporate_gala_description">A sophisticated corporate event with a modern design.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="elegant_garden_wedding_title">Elegant Garden Wedding</p>
+                  <p class="text-muted" data-translate="elegant_garden_wedding_description">A beautiful outdoor wedding with a rustic theme.</p>
                 </div>
               </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
-                <div
-                  class="portfolio-card-3 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+              
+              <!-- Beachfront Wedding -->
+              <div class="service-card portfolio-item" data-category="weddings">
+                <div class="service-card-image portfolio-card-2"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="intimate_birthday_celebration_title">Intimate Birthday Celebration</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="intimate_birthday_celebration_description">A cozy and personalized birthday party.</p>
-                </div>
-              </div>
-            </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
-                <div
-                  class="portfolio-card-4 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
-                <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="luxury_destination_wedding_title">Luxury Destination Wedding</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="luxury_destination_wedding_description">A lavish wedding at a tropical resort.</p>
-                </div>
-              </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
-                <div
-                  class="portfolio-card-5 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
-                <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="tech_conference_title">Tech Conference in the City</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="tech_conference_description">A cutting-edge tech conference with industry leaders.</p>
-                </div>
-              </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
-                <div
-                  class="portfolio-card-6 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
-                <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="anniversary_dinner_title">Anniversary Dinner</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="anniversary_dinner_description">A romantic dinner for a special anniversary.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="beachfront_wedding_title">Beachfront Wedding</p>
+                  <p class="text-muted" data-translate="beachfront_wedding_description">A relaxed and scenic wedding by the sea.</p>
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="weddings">
-                <div
-                  class="portfolio-card-7 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+            
+            <!-- Portfolio Grid - Second Row -->
+            <div class="services-grid">
+              <!-- Luxury Destination Wedding -->
+              <div class="service-card portfolio-item" data-category="weddings">
+                <div class="service-card-image portfolio-card-4"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="beachfront_wedding_title">Beachfront Wedding</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="beachfront_wedding_description">A relaxed and scenic wedding by the sea.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="luxury_destination_wedding_title">Luxury Destination Wedding</p>
+                  <p class="text-muted" data-translate="luxury_destination_wedding_description">A lavish wedding at a tropical resort.</p>
                 </div>
               </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="corporate">
-                <div
-                  class="portfolio-card-8 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+              
+              <!-- Orthodox Baptism -->
+              <div class="service-card portfolio-item" data-category="religious">
+                <div class="service-card-image portfolio-card-baptism"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="product_launch_title">Product Launch Event</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="product_launch_description">An exciting product launch with interactive displays.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="orthodox_baptism_title">Orthodox Baptism</p>
+                  <p class="text-muted" data-translate="orthodox_baptism_description">A traditional and spiritual Orthodox baptism ceremony.</p>
                 </div>
               </div>
-              <div class="portfolio-item flex flex-col gap-3 pb-3" data-category="private">
-                <div
-                  class="portfolio-card-9 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                ></div>
+              <!-- Anniversary Dinner -->
+              <div class="service-card portfolio-item" data-category="private">
+                <div class="service-card-image portfolio-card-6"></div>
                 <div>
-                  <p class="text-[#181611] text-base font-medium leading-normal" data-translate="engagement_party_title">Engagement Party</p>
-                  <p class="text-[#888063] text-sm font-normal leading-normal" data-translate="engagement_party_description">A fun and memorable engagement celebration.</p>
+                  <p class="text-accent font-medium leading-normal" data-translate="anniversary_dinner_title">Anniversary Dinner</p>
+                  <p class="text-muted" data-translate="anniversary_dinner_description">A romantic dinner for a special anniversary.</p>
                 </div>
               </div>
+              
             </div>
+            
+            <!-- Portfolio Grid - Third Row -->
+            <div class="services-grid">
+              <!-- Intimate Birthday Celebration -->
+              <div class="service-card portfolio-item" data-category="private">
+                <div class="service-card-image portfolio-card-3"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="intimate_birthday_celebration_title">Birthday Celebration</p>
+                  <p class="text-muted" data-translate="intimate_birthday_celebration_description">A cozy and personalized birthday party.</p>
+                </div>
+              </div>
+              <!-- Tech Conference -->
+              <div class="service-card portfolio-item" data-category="corporate">
+                <div class="service-card-image portfolio-card-8"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="tech_conference_title">Tech Conference in the City</p>
+                  <p class="text-muted" data-translate="tech_conference_description">A cutting-edge tech conference with industry leaders.</p>
+                </div>
+              </div>
+              
+              <!-- Corporate Gala -->
+              <div class="service-card portfolio-item" data-category="corporate">
+                <div class="service-card-image portfolio-card-5"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="corporate_gala_title">Corporate Gala at the Grand Ballroom</p>
+                  <p class="text-muted" data-translate="corporate_gala_description">A sophisticated corporate event with a modern design.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Book a Consultation CTA -->
+            <div class="flex justify-center p-8">
+              <a href="booking.html" class="primary-button" data-translate="book_consultation_button">
+                Book a Consultation
+              </a>
+            </div>
+            
           </div>
         </div>
         <div id="footer-placeholder"></div>
