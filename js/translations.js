@@ -159,6 +159,22 @@ const translations = {
     terms_contact_info_text: "If you have any questions about these terms, please contact us at:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Phone: +30 693 159 5474",
+
+    // Booking Page
+    book_consultation_title: "Book Your Consultation",
+    book_consultation_description: "Ready to start planning your perfect event? Schedule a free consultation call with our team. We'll discuss your vision, answer your questions, and explore how we can bring your dream event to life.",
+    booking_benefit_1_title: "Free Consultation",
+    booking_benefit_1_description: "No cost, no obligation - just a friendly chat about your event vision.",
+    booking_benefit_2_title: "Personalized Planning",
+    booking_benefit_2_description: "We'll discuss your specific needs and create a tailored approach.",
+    booking_benefit_3_title: "Expert Guidance",
+    booking_benefit_3_description: "Get professional advice and insights from our experienced team.",
+    booking_widget_title: "Select Your Preferred Time & Language",
+    booking_widget_description: "Choose a date and time that works best for you. We offer our services in your preferred language to make the process as smooth as possible. Our consultation calls typically last 30 minutes.",
+    booking_alternative_title: "Can't find a suitable time?",
+    booking_alternative_description: "Contact us directly and we'll arrange a time that works for you:",
+    booking_email_button: "Email us",
+    booking_call_button: "Call us"
   },
   de: {
     filoxenia_moments_header: "Filoxenia Moments",
@@ -200,7 +216,7 @@ const translations = {
     phone_number_placeholder: "Geben Sie Ihre Telefonnummer ein",
     message_label: "Nachricht",
     message_placeholder: "Geben Sie Ihre Nachricht ein",
-    submit_button: "einreichen",
+    submit_button: "Einreichen",
     contact_information_title: "Kontaktinformation",
     contact_email: "Email: filoxeniamoments@gmail.com",
     contact_phone: "Telefon: +30 693 159 5474",
@@ -320,6 +336,22 @@ const translations = {
     terms_contact_info_text: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter:",
     terms_contact_info_email: "E-Mail: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Telefon: +30 693 159 5474",
+
+    // Booking Page
+    book_consultation_title: "Buchen Sie Ihre Beratung",
+    book_consultation_description: "Bereit, mit der Planung Ihrer perfekten Veranstaltung zu beginnen? Vereinbaren Sie ein kostenloses Beratungsgespräch mit unserem Team. Wir besprechen Ihre Vision, beantworten Ihre Fragen und erkunden, wie wir Ihre Traumveranstaltung zum Leben erwecken können.",
+    booking_benefit_1_title: "Kostenlose Beratung",
+    booking_benefit_1_description: "Keine Kosten, keine Verpflichtung - nur ein freundliches Gespräch über Ihre Veranstaltungsvision.",
+    booking_benefit_2_title: "Personalisierte Planung",
+    booking_benefit_2_description: "Wir besprechen Ihre spezifischen Bedürfnisse und erstellen einen maßgeschneiderten Ansatz.",
+    booking_benefit_3_title: "Fachkundige Anleitung",
+    booking_benefit_3_description: "Holen Sie sich professionellen Rat und Einblicke von unserem erfahrenen Team.",
+    booking_widget_title: "Wählen Sie Ihre bevorzugte Zeit & Sprache",
+    booking_widget_description: "Wählen Sie ein Datum und eine Uhrzeit, die für Sie am besten passen. Wir bieten unsere Dienstleistungen in Ihrer bevorzugten Sprache an, um den Prozess so reibungslos wie möglich zu gestalten. Unsere Beratungsgespräche dauern in der Regel 30 Minuten.",
+    booking_alternative_title: "Keine passende Zeit gefunden?",
+    booking_alternative_description: "Kontaktieren Sie uns direkt und wir vereinbaren eine für Sie passende Zeit:",
+    booking_email_button: "Mailen Sie uns",
+    booking_call_button: "Rufen Sie uns an"
   },
   el: {
     filoxenia_moments_header: "Φιλοξενία Moments",
@@ -481,5 +513,21 @@ const translations = {
     terms_contact_info_text: "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτούς τους όρους, παρακαλούμε επικοινωνήστε μαζί μας στο:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Τηλέφωνο: +30 693 159 5474",
+
+    // Booking Page
+    book_consultation_title: "Κλείστε τη Συνεδρία σας",
+    book_consultation_description: "Είστε έτοιμοι να ξεκινήσετε τον σχεδιασμό της τέλειας εκδήλωσής σας; Προγραμματίστε μια δωρεάν συμβουλευτική κλήση με την ομάδα μας. Θα συζητήσουμε το όραμά σας, θα απαντήσουμε στις ερωτήσεις σας και θα εξερευνήσουμε πώς μπορούμε να ζωντανέψουμε την εκδήλωση των ονείρων σας.",
+    booking_benefit_1_title: "Δωρεάν Συνεδρία",
+    booking_benefit_1_description: "Χωρίς κόστος, χωρίς υποχρέωση - απλώς μια φιλική συζήτηση για το όραμα της εκδήλωσής σας.",
+    booking_benefit_2_title: "Εξατομικευμένος Σχεδιασμός",
+    booking_benefit_2_description: "Θα συζητήσουμε τις συγκεκριμένες ανάγκες σας και θα δημιουργήσουμε μια προσαρμοσμένη προσέγγιση.",
+    booking_benefit_3_title: "Καθοδήγηση από Ειδικούς",
+    booking_benefit_3_description: "Λάβετε επαγγελματικές συμβουλές και πληροφορίες από την έμπειρη ομάδα μας.",
+    booking_widget_title: "Επιλέξτε την Προτιμώμενη Ώρα & Γλώσσα σας",
+    booking_widget_description: "Επιλέξτε μια ημερομηνία και ώρα που σας εξυπηρετεί καλύτερα. Προσφέρουμε τις υπηρεσίες μας στην προτιμώμενη γλώσσα σας για να κάνουμε τη διαδικασία όσο το δυνατόν πιο ομαλή. Οι συμβουλευτικές μας κλήσεις διαρκούν συνήθως 30 λεπτά.",
+    booking_alternative_title: "Δεν μπορείτε να βρείτε κατάλληλη ώρα;",
+    booking_alternative_description: "Επικοινωνήστε απευθείας μαζί μας και θα κανονίσουμε μια ώρα που σας εξυπηρετεί:",
+    booking_email_button: "Στείλτε μας email",
+    booking_call_button: "Καλέστε μας"
   },
 }; 
