@@ -159,10 +159,6 @@ const translations = {
     terms_contact_info_text: "If you have any questions about these terms, please contact us at:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Phone: +30 693 159 5474",
-
-    baptism_title: "Christian Baptism",
-    baptism_description: "Celebrating the sacred tradition of Christian baptism with reverence, joy, and attention to detail.",
-
   },
   de: {
     filoxenia_moments_header: "Filoxenia Moments",
@@ -324,9 +320,6 @@ const translations = {
     terms_contact_info_text: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter:",
     terms_contact_info_email: "E-Mail: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Telefon: +30 693 159 5474",
-
-    baptism_title: "Christliche Taufe",
-    baptism_description: "Die heilige Tradition der christlichen Taufe mit Ehrfurcht, Freude und Liebe zum Detail feiern.",
   },
   el: {
     filoxenia_moments_header: "Φιλοξενία Moments",
@@ -488,8 +481,5 @@ const translations = {
     terms_contact_info_text: "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτούς τους όρους, παρακαλούμε επικοινωνήστε μαζί μας στο:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Τηλέφωνο: +30 693 159 5474",
-
-    baptism_title: "Ορθόδοξος Βαπτισμός",
-    baptism_description: "Η θρησκευτική τελετή της ορθόδοξης βαπτίσματος με σεβασμό, ευχάριστο και προσεκτικό στιλ.",
   },
 }; 
