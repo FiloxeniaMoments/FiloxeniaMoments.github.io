@@ -360,7 +360,7 @@ const translations = {
     submit_button: "Υποβολή",
     contact_information_title: "Στοιχεία επικοινωνίας",
     contact_email: "Ηλεκτρονική διεύθυνση: filoxeniamoments@gmail.com",
-    contact_phone: "Τηλέφωνο: +30 697 400 0000",
+    contact_phone: "Τηλέφωνο: +30 693 159 5474",
     services_page_title: "Οι Υπηρεσίες μας",
     services_page_description: "Στο Filoxenia Moments, ειδικευόμαστε στη δημιουργία αξέχαστων εκδηλώσεων προσαρμοσμένων στο μοναδικό σας όραμα. Από ιδιωτικές συγκεντρώσεις έως μεγάλες γιορτές, η ομάδα μας εξασφαλίζει ότι κάθε λεπτομέρεια εκτελείται άψογα.",
     destination_events_title: "Εκδηλώσεις Προορισμού",
@@ -475,5 +475,8 @@ const translations = {
     terms_contact_info_text: "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτούς τους όρους, παρακαλούμε επικοινωνήστε μαζί μας στο:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Τηλέφωνο: +30 693 159 5474",
+
+    baptism_title: "Christliche Taufe",
+    baptism_description: "Die heilige Tradition der christlichen Taufe mit Ehrfurcht, Freude und Liebe zum Detail feiern.",
   },
 }; 
