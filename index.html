@@ -1,317 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Filoxenia Moments - Luxury Wedding and Event Planning Services">
-    <meta name="keywords" content="wedding planning, event planning, luxury events, special occasions">
-    <meta name="author" content="Filoxenia Moments">
-    
-    <title>Filoxenia Moments | Luxury Wedding & Event Planning</title>
-    
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="css/critical.css" as="style">
-    <link rel="stylesheet" href="css/critical.css">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/social.css" media="print" onload="this.media='all'">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
-    
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Filoxenia Moments | Luxury Wedding & Event Planning">
-    <meta property="og:description" content="Creating bespoke luxury weddings and events tailored to your unique story.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://filoxeniamoments.com">
-    <meta property="og:type" content="website">
-</head>
-<body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </a>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Filoxenia Moments</title>
+  </head>
+  <body>
+    <div class="layout-root">
+      <div class="layout-container">
+        <div id="header-placeholder"></div>
+        <div class="layout-content-wrapper">
+          <div class="layout-content">
+            <div class="responsive-container">
+              <div class="responsive-section">
+                <div class="hero-content">
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1 class="hero-title" data-translate="filoxenia_moments_title">
+                      Filoxenia Moments
+                    </h1>
+                    <h2 class="hero-subtitle" data-translate="boutique_elegance_subtitle">
+                      Boutique Elegance meets Warm Hospitality
+                    </h2>
+                  </div>
+                  <a href="contact.html" class="primary-button">
+                    <span class="truncate" data-translate="plan_your_event_button_main">Plan Your Event</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="love-notes.html">Love Notes</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h2 class="heading-section" data-translate="our_services_title">Our Services</h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-card-image services-card-1"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="weddings_title">Weddings</p>
+                  <p class="text-muted" data-translate="weddings_description">Creating unforgettable wedding experiences tailored to your unique love story.</p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-image services-card-2"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="corporate_events_title">Corporate Events</p>
+                  <p class="text-muted" data-translate="corporate_events_description">Planning seamless and sophisticated corporate events that leave a lasting impression.</p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-image services-card-3"></div>
+                <div>
+                  <p class="text-accent font-medium leading-normal" data-translate="private_parties_title">Parties</p>
+                  <p class="text-muted" data-translate="private_parties_description">Designing memorable private parties that reflect your personal style.</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="heading-section" data-translate="contact_us_title">Contact Us</h2>
+            <div class="responsive-container">
+              <div class="responsive-section">
+                <div class="contact-banner">
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1 class="hero-title" data-translate="beautiful_together_title">
+                      Let's Create Something Beautiful Together
+                    </h1>
+                    <h2 class="hero-subtitle" data-translate="reach_out_subtitle">
+                      Reach out to us to discuss your event needs and how we can make your vision a reality.
+                    </h2>
+                  </div>
+                  <a href="contact.html" class="primary-button">
+                    <span class="truncate" data-translate="contact_us_button">Contact Us</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Filoxenia Moments</h1>
-                <p class="tagline">A boutique wedding and event planning studio</p>
-                <p class="hero-description">Creating bespoke events inspired by your unique story</p>
-                <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Our Services</h2>
-                    <p class="subtitle">Tailored to your unique vision</p>
-                </div>
-                <p class="section-description fade-in">
-                    We offer comprehensive wedding and event planning services that 
-                    are customized to meet your specific needs and bring your vision to life. 
-                    From full-service planning to day-of coordination, we're here to help you 
-                    create unforgettable moments.
-                </p>
-
-                <div class="services-grid">
-                    <!-- Wedding Planning Card -->
-                    <div class="service-card fade-in">
-                        <div class="service-image">
-                            <img src="assets/images/marriage.png" 
-                                 alt="Wedding Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Wedding Planning</h3>
-                            <p class="service-description">
-                                From intimate gatherings to grand celebrations, our wedding planning services 
-                                are designed to bring your dream wedding to life with meticulous attention to detail.
-                            </p>
-                            <a href="services.html#wedding" class="service-link">Learn More</a>
-                        </div>
-                    </div>
-
-                    <!-- Corporate Events Card -->
-                    <div class="service-card fade-in">
-                        <div class="service-image">
-                            <img src="assets/images/event.avif" 
-                                 alt="Corporate Event Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Corporate Events</h3>
-                            <p class="service-description">
-                                Elevate your company events with our professional corporate event planning services. 
-                                From conferences to team-building retreats, we handle it all.
-                            </p>
-                            <a href="services.html#corporate" class="service-link">Learn More</a>
-                        </div>
-                    </div>
-
-                    <!-- Special Occasions Card -->
-                    <div class="service-card fade-in">
-                        <div class="service-image">
-                            <img src="assets/images/cards.png" 
-                                 alt="Special Occasions Planning Services"
-                                 width="300" height="200">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Special Occasions</h3>
-                            <p class="service-description">
-                                Celebrate life's milestones with our special occasion planning services. 
-                                From anniversaries to birthdays, we create memorable experiences.
-                            </p>
-                            <a href="services.html#occasions" class="service-link">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section Preview -->
-        <section class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image fade-in">
-                        <img src="assets/images/event.avif" 
-                             alt="Filoxenia Moments Team" 
-                             width="600" height="400">
-                    </div>
-                    <div class="about-text fade-in">
-                        <h3>Creating Memorable Experiences</h3>
-                        <p>
-                            At Filoxenia Moments, we believe in the power of genuine hospitality – the 
-                            true meaning of "filoxenia" in Greek culture. We're passionate about creating 
-                            bespoke events that reflect your personal style and vision.
-                        </p>
-                        <p>
-                            With our meticulous attention to detail and creative approach, we transform 
-                            ordinary events into extraordinary experiences that leave a lasting impression on 
-                            you and your guests.
-                        </p>
-                        <a href="about.html" class="btn btn-primary">About Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>What Our Clients Say</h2>
-                    <p class="subtitle">Stories from our happy couples and clients</p>
-                </div>
-                
-                <div class="testimonial-slider fade-in">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-item current">
-                        <blockquote class="testimonial-content">
-                            "Filoxenia Moments transformed our wedding into a magical experience that exceeded all our expectations. Their attention to detail and dedication to our vision was unmatched."
-                        </blockquote>
-                        <div class="testimonial-author">Sarah & Michael</div>
-                        <div class="testimonial-role">Wedding Couple</div>
-                    </div>
-                    
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial-content">
-                            "Working with Filoxenia Moments for our corporate retreat was an absolute pleasure. Every aspect was perfectly coordinated, allowing us to focus on our team-building objectives."
-                        </blockquote>
-                        <div class="testimonial-author">David Wilson</div>
-                        <div class="testimonial-role">Chief Marketing Officer</div>
-                    </div>
-                    
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial-content">
-                            "The 50th anniversary celebration they planned for us was simply perfect. They captured the essence of our 50 years together and created a memorable evening for all of our guests."
-                        </blockquote>
-                        <div class="testimonial-author">Robert & Eleanor</div>
-                        <div class="testimonial-role">Anniversary Celebration</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-controls fade-in">
-                    <button class="testimonial-prev" aria-label="Previous testimonial">
-                        <span>&larr;</span>
-                    </button>
-                    <div class="testimonial-dots">
-                        <button class="dot active" aria-label="Testimonial 1"></button>
-                        <button class="dot" aria-label="Testimonial 2"></button>
-                        <button class="dot" aria-label="Testimonial 3"></button>
-                    </div>
-                    <button class="testimonial-next" aria-label="Next testimonial">
-                        <span>&rarr;</span>
-                    </button>
-                </div>
-                
-                <div class="testimonial-cta fade-in">
-                    <a href="love-notes.html" class="btn btn-outline">Read More Stories</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Social Media Feed Section -->
-        <section class="social-feed">
-            <div class="container">
-                <div class="social-feed-title fade-in">
-                    <h2>Follow Our Journey</h2>
-                    <p class="subtitle">Get inspired by our latest events</p>
-                </div>
-                
-                <div class="social-feed-grid">
-                    <!-- Social feed items will be dynamically loaded here -->
-                </div>
-                
-                <div class="social-follow fade-in">
-                    <h3 class="social-follow-title">Connect With Us</h3>
-                    <div class="social-follow-icons">
-                        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Follow us on Pinterest">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-                    </div>
-                    <p class="social-follow-handle">@FiloxeniaMoments</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content fade-in">
-                    <h2>Ready to Start Planning Your Special Event?</h2>
-                    <p>Let's create unforgettable moments together. Contact us for a consultation.</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo-column">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
-                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
-                <nav class="footer-nav">
-                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
-    <script src="js/main.js" defer></script>
-    <script src="js/social.js" defer></script>
-    <script src="js/image-optimize.js" defer></script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/js/service-worker.js')
-            .then(registration => {
-              console.log('Service Worker registered successfully:', registration.scope);
-            })
-            .catch(error => {
-              console.log('Service Worker registration failed:', error);
-            });
-        });
-      }
-    </script>
-</body>
-</html> 
+        <div id="footer-placeholder"></div>
+      </div>
+    </div>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
+    <script 
+      src="https://widgets.leadconnectorhq.com/loader.js"  
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+      data-widget-id="687d69d6fe05ee3ea88ffcf3"   > 
+    </script> 
+  </body>
+</html>

@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Typography */
+  .font-serif-sans {
+    font-family: "Noto Serif", "Noto Sans", sans-serif;
+  }
+
+  /* Portfolio Components */
+  .portfolio-card-1 {
+    background-image: url("./pictures/garten-wedd.webp");
+  }
+  .portfolio-card-2 {
+    background-image: url("./pictures/beach_wedd.jpg");
+  }
+  .portfolio-card-3 {
+    background-image: url("./pictures/birthday.jpg");
+  }
+  .portfolio-card-4 {
+    background-image: url("./pictures/luxus wedding.jpg");
+  }
+  .portfolio-card-5 {
+    background-image: url("./pictures/corporate.jpg");
+  }
+  .portfolio-card-6 {
+    background-image: url("./pictures/Anniversary.jpg");
+  }
+  .portfolio-card-7 {
+    background-image: url("./pictures/beach_wedd.jpg");
+  }
+  .portfolio-card-8 {
+    background-image: url("./pictures/tech.jpg");
+  }
+  .portfolio-card-9 {
+    background-image: url("./pictures/Engangement.jpg");
+  }
+
+  .portfolio-card-baptism {
+    background-image: url("./pictures/Baptism.jpg");
+  }
+
+  .filter-button.active {
+    @apply bg-accent text-white;
+  }
+  .filter-button.inactive {
+    @apply bg-[#f4f3f0] text-[#181611];
+  }
+
+  /* Social Media Components */
+  .social-icon {
+    @apply w-6 h-6 text-accent hover:text-primary transition-colors duration-300;
+  }
+
+  .social-link {
+    @apply flex items-center gap-2 text-accent hover:text-primary transition-colors duration-300;
+  }
+
+  /* Container Components */
+  .responsive-container {
+    container-type: inline-size;
+  }
+
+  .responsive-section {
+    padding: 0;
+  }
+  @container (min-width: 480px) {
+    .responsive-section {
+      padding: 1rem;
+    }
+  }
+
+  /* Hero Components */
+  .hero-content {
+    @apply flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat 
+           items-center justify-center p-4 rounded-2xl overflow-hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+      url("https://lh3.googleusercontent.com/aida-public/AB6AXuARz2MjIert2hpGPJUPK7yRSQLKBhI7YRJtht_wfCESLH5qAkV-djWFAetT8XVGSIoUKSaX_A4MU74p3KuVBOwEeIc7wDLXXpGIJciZUQVz66tLqsMDTyI999W-2-iDxzFnZ_-eELzwLtZv0FnvWByfXZnDiwoA6Yj1yzYcDoJzGKuV0j8LhKnTiEU68Cy1rlQJFI1n8egwJVGZPT1Hh1D8cYeEC9L7eoNrO7I_XA15rPSAY0kFyZk6aJDU_w9Rn6n2WVjzaJIo3kKV");
+  }
+  @container (min-width: 480px) {
+    .hero-content {
+      @apply gap-8 rounded-xl;
+    }
+  }
+
+  .contact-banner {
+    @apply flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat 
+           items-center justify-center p-4 rounded-2xl overflow-hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+      url("https://lh3.googleusercontent.com/aida-public/AB6AXuD04dhgELgrcontBWiROQvjO6i5_RbGv6PxW7igMOu3W1HcvGIv7kL7Q1N2ovdHtsBB0Pc7qVzxq-dmclXrDTMGeGklVDFja7VUw_34LDTdQeXHnYVsssaG1_rJ6r6lco3zvLsd7yTKqPmlMXnALKN88f3iE7fijLeLVGajXiekX_JUe5gojWGOX_neh9pMlLj_23DfPkxsujiFz2CwXtANS-U9EVFde0Usb7W5P0spgUAbdLM3vv9w7KCBEI-MrNrZpwsPXc3x9zgB");
+  }
+  @container (min-width: 480px) {
+    .contact-banner {
+      @apply gap-8 rounded-xl;
+    }
+  }
+
+  /* Grid Components */
+  .services-grid {
+    @apply grid grid-cols-auto-fit-card gap-3 p-4;
+  }
+
+  .service-card {
+    @apply flex flex-col gap-3 pb-3;
+  }
+
+  .service-card-image {
+    @apply w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl;
+  }
+
+  /* Service Card Images */
+  .services-card-1 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkFx3r_6FRtzlFb04iBiRXtq5sXMfWWQfGVODWDLNhHN0aRhy0yeWhF88M_0Fl_NEopSA3uZLKWJJWIpcvXTxPdh7haL7zgD7qfd4I05K3tk6xIw9F_mlKm3qNqjIO2RFH18mOCdLPSe9m6GISttIzZQIs47jtay36FG0IgXRFpcwOb1dJAb8VtB4jfjbHzVjVLIbgunriVK_EK8fNV6Zao6k3OCKs3Q7qlCrvwyORGflTvVHBxmzUoVYoH3gYxtW-wVUEUjSrK7PB");
+  }
+
+  .services-card-2 {
+    background-image: url("./pictures/corporate.jpg");
+  }
+
+  .services-card-3 {
+    background-image: url("./pictures/parties.jpg");
+  }
+
+  .services-card-baptism {
+    background-image: url("./pictures/Baptism.jpg");
+  }
+
+  .about-founder-image {
+    background-image: url("./pictures/founder_efi.jpg");
+  }
+
+  /* Typography Components */
+  .heading-section {
+    @apply text-accent text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5;
+  }
+
+  .heading-section {
+    @apply text-accent text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5;
+  }
+  
+  .text-muted {
+    @apply text-accent-muted text-sm font-normal leading-normal;
+  }
+
+  /* Layout Components */
+  .layout-root {
+    @apply relative flex size-full min-h-screen flex-col bg-white overflow-x-hidden font-sans;
+  }
+
+  .layout-container {
+    @apply flex h-full grow flex-col;
+  }
+
+  .layout-content-wrapper {
+    @apply px-40 flex flex-1 justify-center py-5;
+  }
+
+  .layout-content {
+    @apply flex flex-col max-w-[960px] flex-1;
+  }
+
+  .text-accent {
+    @apply text-[#caa810];
+  }
+
+  /* Booking Page Components */
+  .booking-benefit-card {
+    @apply flex flex-col gap-2 flex-1 min-w-64;
+  }
+
+  .booking-benefit-number {
+    @apply w-8 h-8 bg-accent rounded-full flex items-center justify-center;
+  }
+
+  .booking-benefit-title {
+    @apply text-accent font-semibold text-lg;
+  }
+
+  .booking-alternative-section {
+    @apply flex flex-col gap-3 p-4 bg-gray-50 rounded-lg;
+  }
+
+  .booking-contact-link {
+    @apply flex items-center gap-2 text-accent hover:text-primary transition-colors;
+  }
+
+  .booking-widget-container {
+    @apply w-full min-h-[600px] rounded-lg overflow-hidden border border-gray-200;
+  }
+
+  /* Existing Components */
+  .container-padding {
+    padding: 0;
+  }
+  @container (min-width: 480px) {
+    .container-padding {
+      padding: 1rem;
+    }
+  }
+
+  .hero-title {
+    @apply text-white text-4xl font-black leading-tight tracking-[-0.033em];
+  }
+  @container (min-width: 480px) {
+    .hero-title {
+      @apply text-5xl font-black leading-tight tracking-[-0.033em];
+    }
+  }
+
+  .hero-subtitle {
+    @apply text-white text-sm font-normal leading-normal;
+  }
+  @container (min-width: 480px) {
+    .hero-subtitle {
+      @apply text-base font-normal leading-normal;
+    }
+  }
+
+  .primary-button {
+    @apply flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center 
+           overflow-hidden rounded-full h-10 px-4 bg-primary text-primary-text
+           text-sm font-bold leading-normal tracking-[0.015em];
+  }
+  @container (min-width: 480px) {
+    .primary-button {
+      @apply h-12 px-5 text-base font-bold leading-normal tracking-[0.015em];
+    }
+  }
+}
+
+@layer components {
+  .privacy-container h2 {
+    @apply text-accent text-2xl font-bold mt-10 mb-4;
+  }
+  
+  .privacy-container h3 {
+    @apply text-accent-muted text-xl font-semibold mt-6 mb-3;
+  }
+  
+  .privacy-container p, .privacy-container ul {
+    @apply text-muted mb-4 leading-relaxed;
+  }
+  
+  .privacy-container ul {
+    @apply list-disc pl-5;
+  }
+  
+  .privacy-container .highlight {
+    @apply bg-pink-50 border-l-4 border-primary p-4 rounded-md my-6;
+  }
+  
+  .privacy-container .date {
+    @apply text-sm italic text-accent-muted mb-6;
+  }
+} 

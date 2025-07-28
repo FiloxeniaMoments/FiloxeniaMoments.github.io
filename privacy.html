@@ -3,310 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Filoxenia Moments - Learn how we collect, use, and protect your personal information.">
-    <meta name="keywords" content="Filoxenia Moments, privacy policy, GDPR, data protection, wedding planning, event planner">
-    <meta name="author" content="Filoxenia Moments">
-    
     <title>Privacy Policy | Filoxenia Moments</title>
     
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="css/critical.css" as="style">
-    <link rel="stylesheet" href="css/critical.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
-    
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Privacy Policy | Filoxenia Moments">
-    <meta property="og:description" content="Learn how Filoxenia Moments collects, uses, and protects your personal information.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://filoxeniamoments.com/privacy.html">
-    <meta property="og:type" content="website">
-    
-    <style>
-        .privacy-section {
-            padding: 3rem 0;
-        }
-        
-        .privacy-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .privacy-container h2 {
-            color: var(--primary-color);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.8rem;
-        }
-        
-        .privacy-container h3 {
-            color: var(--secondary-color);
-            margin: 1.5rem 0 0.8rem;
-            font-size: 1.4rem;
-        }
-        
-        .privacy-container p, .privacy-container ul {
-            margin-bottom: 1.2rem;
-            line-height: 1.6;
-        }
-        
-        .privacy-container ul {
-            padding-left: 1.5rem;
-        }
-        
-        .privacy-container ul li {
-            margin-bottom: 0.8rem;
-            position: relative;
-        }
-        
-        .privacy-container ul li::before {
-            content: "";
-            position: absolute;
-            left: -1rem;
-            top: 0.6rem;
-            width: 6px;
-            height: 6px;
-            background-color: var(--secondary-color);
-            border-radius: 50%;
-        }
-        
-        .privacy-container .highlight {
-            background-color: rgba(211, 69, 133, 0.1);
-            border-left: 3px solid var(--secondary-color);
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1.5rem 0;
-        }
-        
-        .privacy-container .date {
-            font-style: italic;
-            margin-bottom: 2rem;
-            color: var(--secondary-color);
-        }
-        
-        @media (max-width: 768px) {
-            .privacy-section {
-                padding: 2rem 0;
-            }
-            
-            .privacy-container h2 {
-                font-size: 1.5rem;
-            }
-            
-            .privacy-container h3 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="love-notes.html">Love Notes</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <p class="page-description">How we protect your personal information</p>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <section class="privacy-section">
-            <div class="container">
-                <div class="privacy-container fade-in">
-                    <p class="date">Last Updated: July 15, 2023</p>
-                    
-                    <div class="highlight">
-                        <p>At Filoxenia Moments, we deeply value your privacy and the trust you place in us with your personal information. This Privacy Policy explains how we collect, use, and protect your data in compliance with the General Data Protection Regulation (GDPR) and other applicable privacy laws.</p>
+    <div class="layout-root">
+        <div class="layout-container">
+            <div id="header-placeholder"></div>
+            <div class="layout-content-wrapper">
+                <div class="layout-content">
+                    <!-- Page Banner -->
+                    <div class="p-4">
+                        <h1 class="heading-section text-4xl" data-translate="privacy_policy_title">Privacy Policy</h1>
+                        <p class="text-muted" data-translate="privacy_policy_subtitle">How we protect your personal information</p>
                     </div>
-                    
-                    <h2>1. Who We Are</h2>
-                    <p>Filoxenia Moments is a wedding and event planning service based in [Your Location]. We are the data controller responsible for your personal information.</p>
-                    <p>You can contact us at:</p>
-                    <ul>
-                        <li>Email: filoxenia.moments@gmail.com</li>
-                        <li>Phone: (555) 123-4567</li>
-                        <li>Address: [Your Business Address]</li>
-                    </ul>
-                    
-                    <h2>2. Information We Collect</h2>
-                    <p>We collect and process the following categories of personal information:</p>
-                    
-                    <h3>2.1 Information You Provide to Us</h3>
-                    <ul>
-                        <li>Contact information (name, email address, phone number, postal address)</li>
-                        <li>Event details (date, venue, guest count, preferences)</li>
-                        <li>Payment information (processed through secure third-party payment processors)</li>
-                        <li>Communications you have with us via email, phone, or our contact forms</li>
-                        <li>Testimonials or reviews you choose to submit</li>
-                        <li>Photos you share with us or authorize us to use</li>
-                    </ul>
-                    
-                    <h3>2.2 Information We Collect Automatically</h3>
-                    <ul>
-                        <li>Usage data (such as how you navigate our website)</li>
-                        <li>IP address and device information</li>
-                        <li>Cookies and similar technologies (see our Cookie Policy section)</li>
-                    </ul>
-                    
-                    <h2>3. How We Use Your Information</h2>
-                    <p>We use your personal information for the following purposes:</p>
-                    <ul>
-                        <li>To provide our wedding and event planning services</li>
-                        <li>To communicate with you about your inquiries or booked services</li>
-                        <li>To personalize and improve our services based on your preferences</li>
-                        <li>To process payments and manage our business operations</li>
-                        <li>To send you marketing communications (with your consent)</li>
-                        <li>To comply with legal obligations</li>
-                    </ul>
-                    
-                    <h3>3.1 Legal Basis for Processing</h3>
-                    <p>We process your personal information under the following legal bases:</p>
-                    <ul>
-                        <li><strong>Contract:</strong> Processing necessary for the performance of our contract with you</li>
-                        <li><strong>Legitimate Interests:</strong> Where processing is in our legitimate interests and not overridden by your rights</li>
-                        <li><strong>Consent:</strong> Where you have given clear consent for us to process your personal data</li>
-                        <li><strong>Legal Obligation:</strong> Where we need to comply with a legal obligation</li>
-                    </ul>
-                    
-                    <h2>4. Data Sharing and Third Parties</h2>
-                    <p>We may share your personal information with:</p>
-                    <ul>
-                        <li>Service providers who help us deliver our services (e.g., venue partners, photographers, caterers)</li>
-                        <li>Payment processors who handle financial transactions</li>
-                        <li>IT service providers who maintain our website and systems</li>
-                        <li>Professional advisors such as lawyers, accountants, and insurers</li>
-                        <li>Government bodies when required by law</li>
-                    </ul>
-                    <p>We require all third parties to respect the security of your personal data and to treat it in accordance with the law.</p>
-                    
-                    <h2>5. Data Retention</h2>
-                    <p>We retain your personal information for as long as necessary to fulfill the purposes for which we collected it, including:</p>
-                    <ul>
-                        <li>For the duration of our contractual relationship</li>
-                        <li>As required to satisfy legal, accounting, or reporting requirements</li>
-                        <li>As necessary to resolve disputes or enforce our agreements</li>
-                    </ul>
-                    <p>We typically retain client data for 7 years after the completion of services to comply with tax and business record requirements.</p>
-                    
-                    <h2>6. Your Privacy Rights</h2>
-                    <p>Under the GDPR and applicable privacy laws, you have the following rights:</p>
-                    <ul>
-                        <li><strong>Access:</strong> Request access to your personal data</li>
-                        <li><strong>Correction:</strong> Request correction of inaccurate personal data</li>
-                        <li><strong>Erasure:</strong> Request deletion of your personal data under certain circumstances</li>
-                        <li><strong>Restriction:</strong> Request restriction of processing of your personal data</li>
-                        <li><strong>Data Portability:</strong> Request the transfer of your personal data</li>
-                        <li><strong>Objection:</strong> Object to processing of your personal data</li>
-                        <li><strong>Withdraw Consent:</strong> Withdraw consent at any time where we rely on consent to process your personal data</li>
-                    </ul>
-                    <p>To exercise these rights, please contact us at filoxenia.moments@gmail.com. We will respond to your request within 30 days.</p>
-                    
-                    <h2>7. Data Security</h2>
-                    <p>We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, accessed, altered, or disclosed in an unauthorized way. These measures include:</p>
-                    <ul>
-                        <li>Encryption of sensitive data</li>
-                        <li>Secure access controls to our systems</li>
-                        <li>Regular security assessments</li>
-                        <li>Staff training on data protection</li>
-                    </ul>
-                    
-                    <h2>8. Cookie Policy</h2>
-                    <p>Our website uses cookies and similar technologies to enhance your browsing experience. Cookies are small text files stored on your device that help us provide and improve our services.</p>
-                    
-                    <h3>8.1 Types of Cookies We Use</h3>
-                    <ul>
-                        <li><strong>Essential Cookies:</strong> Required for the website to function properly</li>
-                        <li><strong>Analytical/Performance Cookies:</strong> Allow us to recognize and count visitors and analyze website traffic</li>
-                        <li><strong>Functionality Cookies:</strong> Enable the website to remember your preferences</li>
-                        <li><strong>Targeting Cookies:</strong> Record your visit to our website, the pages you visit, and the links you follow</li>
-                    </ul>
-                    
-                    <h3>8.2 Managing Cookies</h3>
-                    <p>You can manage cookies through your browser settings. Please note that disabling certain cookies may impact your experience on our website.</p>
-                    
-                    <h2>9. International Data Transfers</h2>
-                    <p>We primarily process your personal data within the European Economic Area (EEA). However, some of our service providers may be based outside the EEA. Whenever we transfer your personal data out of the EEA, we ensure a similar degree of protection by using specific contracts approved by the European Commission or by relying on other appropriate safeguards.</p>
-                    
-                    <h2>10. Children's Privacy</h2>
-                    <p>Our website and services are not intended for children under 16 years of age. We do not knowingly collect personal information from children. If you believe we have collected personal information from a child, please contact us immediately.</p>
-                    
-                    <h2>11. Changes to This Privacy Policy</h2>
-                    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
-                    
-                    <h2>12. How to Contact Us or File a Complaint</h2>
-                    <p>If you have questions, concerns, or would like to exercise your privacy rights, please contact us at:</p>
-                    <ul>
-                        <li>Email: filoxenia.moments@gmail.com</li>
-                        <li>Phone: (555) 123-4567</li>
-                    </ul>
-                    <p>If you are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+                
+                    <!-- Main Content -->
+                    <main class="p-4">
+                        <div class="privacy-container">
+                            <p class="date" data-translate="privacy_last_updated">Last Updated: July 28, 2025</p>
+                            
+                            <div class="highlight">
+                                <p data-translate="privacy_intro">At Filoxenia Moments, we deeply value your privacy and the trust you place in us. This policy explains how we collect, use, and protect your data in compliance with GDPR.</p>
+                            </div>
+                            
+                            <h2 data-translate="privacy_who_we_are_title">1. Who We Are</h2>
+                            <p data-translate="privacy_who_we_are_text_1">Filoxenia Moments is a wedding and event planning service. We are the data controller for your personal information.</p>
+                            <p data-translate="privacy_who_we_are_text_2">You can contact us at:</p>
+                            <ul>
+                                <li data-translate="privacy_who_we_are_email">Email: filoxeniamoments@gmail.com</li>
+                                <li data-translate="privacy_who_we_are_phone">Phone: +30 693 159 5474</li>
+                            </ul>
+                            
+                            <h2 data-translate="privacy_info_we_collect_title">2. Information We Collect</h2>
+                            <p data-translate="privacy_info_we_collect_text">We collect and process the following categories of personal information:</p>
+                            
+                            <h3 data-translate="privacy_info_you_provide_title">2.1 Information You Provide</h3>
+                            <ul>
+                                <li data-translate="privacy_info_you_provide_item_1">Contact information (name, email, phone)</li>
+                                <li data-translate="privacy_info_you_provide_item_2">Event details (date, venue, preferences)</li>
+                                <li data-translate="privacy_info_you_provide_item_3">Payment information (via secure processors)</li>
+                                <li data-translate="privacy_info_you_provide_item_4">Communications with us</li>
+                            </ul>
+                            
+                            <h3 data-translate="privacy_info_we_collect_auto_title">2.2 Information We Collect Automatically</h3>
+                            <ul>
+                                <li data-translate="privacy_info_we_collect_auto_item_1">Usage data (how you navigate our site)</li>
+                                <li data-translate="privacy_info_we_collect_auto_item_2">IP address and device information</li>
+                                <li data-translate="privacy_info_we_collect_auto_item_3">Cookies (see our Cookie Policy)</li>
+                            </ul>
+                            
+                            <h2 data-translate="privacy_how_we_use_info_title">3. How We Use Your Information</h2>
+                            <p data-translate="privacy_how_we_use_info_text">We use your data for the following purposes:</p>
+                            <ul>
+                                <li data-translate="privacy_how_we_use_info_item_1">To provide event planning services</li>
+                                <li data-translate="privacy_how_we_use_info_item_2">To communicate with you</li>
+                                <li data-translate="privacy_how_we_use_info_item_3">To improve our services</li>
+                                <li data-translate="privacy_how_we_use_info_item_4">To process payments</li>
+                                <li data-translate="privacy_how_we_use_info_item_5">For marketing (with your consent)</li>
+                            </ul>
+                            
+                            <h2 data-translate="privacy_data_sharing_title">4. Data Sharing and Third Parties</h2>
+                            <p data-translate="privacy_data_sharing_text">We may share your information with service providers like venues, photographers, and payment processors who help us deliver our services.</p>
+                            
+                            <h2 data-translate="privacy_data_retention_title">5. Data Retention</h2>
+                            <p data-translate="privacy_data_retention_text">We retain your data for as long as necessary to fulfill our contract and comply with legal and tax requirements (typically 7 years).</p>
+                            
+                            <h2 data-translate="privacy_your_rights_title">6. Your Privacy Rights</h2>
+                            <p data-translate="privacy_your_rights_text">Under GDPR, you have the right to access, correct, delete, or restrict your personal data. To exercise these rights, please contact us.</p>
+                            
+                            <h2 data-translate="privacy_data_security_title">7. Data Security</h2>
+                            <p data-translate="privacy_data_security_text">We use appropriate security measures, including encryption and access controls, to protect your data from unauthorized access.</p>
+                            
+                            <h2 data-translate="privacy_cookie_policy_title">8. Cookie Policy</h2>
+                            <p data-translate="privacy_cookie_policy_text">Our website uses essential and analytical cookies to improve your experience. You can manage cookies in your browser settings.</p>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo-column">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
-                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+                            <h2 data-translate="privacy_contact_us_title">9. How to Contact Us</h2>
+                            <p data-translate="privacy_contact_us_text">If you have any questions, please contact us at:</p>
+                            <ul>
+                                <li data-translate="privacy_contact_us_email">Email: filoxeniamoments@gmail.com</li>
+                                <li data-translate="privacy_contact_us_phone">Phone: +30 693 159 5474</li>
+                            </ul>
+                        </div>
+                    </main>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
-                <nav class="footer-nav">
-                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
-                </nav>
-            </div>
+            <div id="footer-placeholder"></div>
         </div>
-    </footer>
-
-    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
-    <script src="js/main.js" defer></script>
+    </div>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
 </body>
 </html>

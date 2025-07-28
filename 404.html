@@ -8,15 +8,16 @@
     
     <title>Page Not Found | Filoxenia Moments</title>
     
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="css/critical.css" as="style">
-    <link rel="stylesheet" href="css/critical.css">
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
     <style>
         .error-section {
@@ -72,77 +73,33 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="love-notes.html">Love Notes</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <section class="error-section">
-            <h1 class="error-code">404</h1>
-            <h2 class="error-title">Page Not Found</h2>
-            <p class="error-description">
-                The page you are looking for might have been removed, had its name changed, 
-                or is temporarily unavailable.
-            </p>
-            <div class="error-actions">
-                <a href="index.html" class="btn btn-primary">Return Home</a>
-                <a href="contact.html" class="btn btn-outline">Contact Us</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo-column">
-                    <img src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" width="180" height="auto">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p class="contact-info">Email: <span class="contact-highlight">filoxenia.moments@gmail.com</span></p>
-                    <p class="contact-info">Phone: <span class="contact-highlight">(555) 123-4567</span></p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/filoxenia.moments/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-serif-sans">
+        <div class="layout-container flex h-full grow flex-col">
+            <div id="header-placeholder"></div>
+            <div class="px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <!-- Main Content -->
+                    <main>
+                        <section class="error-section">
+                            <h1 class="error-code">404</h1>
+                            <h2 class="error-title">Page Not Found</h2>
+                            <p class="error-description">
+                                The page you are looking for might have been removed, had its name changed, 
+                                or is temporarily unavailable.
+                            </p>
+                            <div class="error-actions">
+                                <a href="index.html" class="btn btn-primary">Return Home</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </section>
+                    </main>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Filoxenia Moments. All rights reserved.</p>
-                <nav class="footer-nav">
-                    <a href="privacy.html">Privacy Policy</a> <span class="nav-separator">|</span> <a href="terms.html">Terms of Service</a>
-                </nav>
-            </div>
+            <div id="footer-placeholder"></div>
         </div>
-    </footer>
-
-    <!-- Deferred JavaScript - Load JavaScript at the end for better performance -->
-    <script src="js/main.js" defer></script>
+    </div>
+    <script src="js/translations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/template.js"></script>
 </body>
 </html> 

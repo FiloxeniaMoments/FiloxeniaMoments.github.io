@@ -1,86 +1,44 @@
-# Filoxenia Moments - Wedding & Event Planning Business To-Do List
+# Project TODO
 
-## Business Identity & Branding
-- [x] Define core services (wedding planning, corporate events, special occasions)
-- [x] Establish brand voice (elegant, professional, warm)
-- [x] Finalize color palette (based on existing primary/secondary colors)
-- [x] Select appropriate typography (serif for headings, sans-serif for body)
-- [x] Add company logo to website
+This file tracks the development tasks for the Filoxenia Moments website.
 
-## Website Structure
-- [x] Homepage with hero section highlighting core services
-- [x] Services page with detailed offerings and pricing
-- [x] Portfolio/Gallery page showcasing past events
-- [x] About Us page with company story and team
-- [x] Contact page with form and business information
-- [x] Testimonials section/page from past clients
-- [ ] Blog section for wedding/event planning tips
+## Completed Tasks
 
-## Essential Features
-- [x] Mobile-responsive design
-- [x] Easy navigation system
-- [x] Contact forms with validation
-- [x] Image gallery with filtering options
-- [x] Service package comparison
-- [x] Call-to-action buttons throughout site
-- [x] Social media integration
-- [x] Booking/consultation scheduling system
+- [x] **Website Refactor:**
+  - [x] Implemented a shared header and footer across all pages to improve consistency and make future updates easier.
+  - [x] Fixed the language switcher to work correctly after the refactor.
+- [x] **Page Updates:**
+  - [x] Redesigned and updated the content on the "Services" page.
+  - [x] Redesigned and updated the content on the "About Us" page with the founder's story.
+  - [x] Redesigned the "Portfolio" page with a new gallery and interactive filters for different event types.
+- [x] **Styling and Cleanup:**
+  - [x] Standardized the visual style, including colors and buttons, across all pages.
+  - [x] Removed old, unused CSS files to keep the project clean and fast.
 
-## Content Development
-- [ ] Professional copywriting for all pages
-- [ ] High-quality event photography
-- [ ] Team member profiles and photos
-- [x] Client testimonials collection
-- [ ] Case studies of successful events
-- [ ] FAQ section addressing common questions
+## Future Ideas
 
-## Technical Requirements
-- [x] Fast page loading times
-- [x] SEO optimization for local search
-- [ ] Analytics implementation
-- [ ] GDPR-compliant privacy policy
-- [ ] Accessibility compliance
-- [x] Secure contact form handling
-- [ ] Browser compatibility testing
+Here are some ideas for new features we could add to the website in the future. These are designed to improve the experience for visitors and make it easier to manage your business.
 
-## Marketing Integration
-- [ ] Email newsletter signup
-- [x] Social media sharing functionality
-- [ ] Lead capture mechanisms
-- [ ] Special promotions section
-- [ ] Partner/vendor showcase
+- **Client Testimonials ("Love Notes"):**
+  - **What it is:** A dedicated section to showcase positive feedback and reviews from past clients.
+  - **Why it's useful:** Builds trust and credibility with potential new clients by showing them how happy others have been with your services.
 
-## Launch Preparation
-- [ ] Content review and proofreading
-- [ ] Cross-browser testing
-- [ ] Mobile device testing
-- [x] Performance optimization
-- [x] 404 page creation
-- [x] XML sitemap generation
-- [ ] Search console registration 
+- **Blog for Event Tips:**
+  - **What it is:** A blog where you can share articles about event planning, wedding tips, or showcase recent events in more detail.
+  - **Why it's useful:** Helps attract more visitors to the site through search engines and establishes you as an expert in the field.
 
-## Website Implementation Plan
-### Setup and Structure
-- [x] Create basic folder structure (/assets, /css, /js)
-- [x] Initialize HTML5 boilerplate for all pages
-- [x] Setup CSS reset/normalize
-- [x] Configure meta tags for SEO
+- **Detailed Booking Form:**
+  - **What it is:** An enhanced contact form that asks for specific details about a potential event, such as the type of event, estimated date, and number of guests.
+  - **Why it's useful:** Helps you gather more information upfront, making it easier to provide a more accurate and personalized quote.
 
-### Performance Optimizations
-- [x] Implement image optimization workflow (WebP format with fallbacks)
-- [x] Configure proper image sizing and compression
-- [x] Setup lazy loading for images
-- [x] Minify CSS and JavaScript assets
-- [x] Implement critical CSS loading
-- [x] Configure proper cache headers
-- [x] Add service worker for offline capabilities
+- **Instagram Feed Integration:**
+  - **What it is:** A live gallery on the website that automatically shows your latest posts from Instagram.
+  - **Why it's useful:** Keeps the website content fresh and encourages visitors to follow you on social media.
 
-### Core Development
-- [x] Create responsive navigation component
-- [x] Build homepage hero section
-- [x] Develop service showcase section
-- [x] Implement testimonials carousel
-- [x] Create responsive gallery with filtering
-- [x] Build contact form with validation
-- [x] Develop booking/consultation scheduling system
-- [x] Implement social media integration 
+- **Expanded Portfolio Galleries:**
+  - **What it is:** When a visitor clicks on a portfolio project, a pop-up window (or a new page) could appear with more photos and a detailed story about the event.
+  - **Why it's useful:** Allows you to show off more of your beautiful work for each event and tell a more compelling story.
+
+- **Live Chat Support:**
+  - **What it is:** A small chat window on the site where visitors can ask questions and get instant answers.
+  - **Why it's useful:** Provides immediate support to potential clients and can help you capture leads you might otherwise miss. 
