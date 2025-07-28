@@ -10,4 +10,18 @@ Jekyll has a special convention where it does not serve files or directories tha
 
 To resolve this, a `.nojekyll` file has been added to the root of the repository. This file disables the Jekyll build process entirely, allowing all files to be served as-is.
 
-**Important:** Do not remove the `.nojekyll` file. If you do, the header and footer will fail to load, and the site will appear broken.
+**Important:** Do not remove the `.nojekyll` file. If you do, a header and footer will fail to load, and the site will appear broken.
+
+## Third-Party Scripts
+
+### LeadConnector Widget
+
+This site uses a chat widget from LeadConnector HQ. The script for this widget is embedded in several HTML files.
+
+**Troubleshooting:**
+
+If you see a `net::ERR_BLOCKED_BY_CLIENT` error in the browser console, it means a browser extension (like an ad blocker or privacy tracker) is preventing the widget from loading. This is not a bug in the site's code.
+
+To see the widget, you can:
+- Disable your ad/privacy blocker for this site.
+- View the page in an incognito or private browser window.
