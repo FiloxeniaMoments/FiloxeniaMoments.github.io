@@ -253,4 +253,25 @@
   .privacy-container .date {
     @apply text-sm italic text-accent-muted mb-6;
   }
+}
+
+@layer components {
+  /* 404 Not Found Page */
+  .not-found-container {
+      @apply flex flex-col justify-center items-center h-screen text-center;
+      font-family: 'Noto Serif', serif;
+  }
+  .not-found-404 {
+      @apply text-9xl font-bold text-black opacity-10 mb-[-2rem];
+      filter: blur(2px);
+  }
+  .not-found-title {
+      @apply text-4xl mb-4;
+  }
+  .not-found-text {
+      @apply text-lg text-gray-600 mb-8 max-w-md;
+  }
+  .not-found-links a {
+      @apply mx-4 text-gray-800 no-underline text-base hover:underline;
+  }
 } 

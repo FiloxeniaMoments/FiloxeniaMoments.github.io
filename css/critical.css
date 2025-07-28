@@ -1,209 +1,134 @@
-/* Critical CSS - Only styles necessary for above-the-fold content */
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
-/* Import reset */
-@import url('reset.css');
-
-/* Variables */
-:root {
-  /* Updated colors for gold, pink, and white */
-  --primary-color: #d0a90e; /* Gold */
-  --secondary-color: #d34585; /* Pink */
-  --accent-color: #f6e7ea; /* Light Pink */
-  --light-color: #ffffff; /* White */
-  --dark-color: #1a1a1a; /* Nearly Black */
-  --text-color: #333333;
-  --text-light: #ffffff;
-  
-  /* Typography */
-  --heading-font: 'Playfair Display', Georgia, serif;
-  --body-font: 'Montserrat', 'Helvetica Neue', sans-serif;
-  
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 8rem;
-  
-  /* Other */
-  --container-width: 1200px;
-  --border-radius: 4px;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Base Typography */
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-  font-family: var(--body-font);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --primary-color: #A0522D; /* Sienna */
+  --secondary-color: #DEB887; /* BurlyWood */
+  --accent-color: #D2691E; /* Chocolate */
+  --background-color: #F5F5DC; /* Beige */
+  --text-color: #333333;
+  --header-bg: #FFFFFF;
+  --footer-bg: #F0EAD6;
+}
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--background-color);
   color: var(--text-color);
-  background-color: var(--light-color);
+  line-height: 1.6;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: var(--spacing-md);
-}
-
-/* Container */
 .container {
-  width: 90%;
-  max-width: var(--container-width);
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-sm);
+  padding: 0 20px;
 }
-
-/* Header */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: var(--spacing-xs) 0;
-}
-
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  max-width: 180px;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-}
-
-/* Navigation - Mobile First */
-.menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: var(--spacing-xs);
-}
-
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: var(--primary-color);
-  margin: 5px 0;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.nav-list {
-  display: none;
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  padding-top: 80px;
-  background-image: linear-gradient(rgba(212, 175, 55, 0.6), rgba(231, 84, 128, 0.6)), 
-                   url('../assets/images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  color: var(--light-color);
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: var(--spacing-md);
-}
-
-.tagline {
-  font-family: var(--heading-font);
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-bottom: var(--spacing-md);
-  color: var(--light-color);
-}
-
-.hero-description {
-  font-size: 1.25rem;
-  margin-bottom: var(--spacing-lg);
-  color: var(--light-color);
-}
-
-/* Buttons */
 .btn {
-  display: inline-block;
-  padding: 12px 30px;
-  font-family: var(--body-font);
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s;
 }
-
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--dark-color);
-  border: 1px solid var(--primary-color);
+  color: white;
 }
-
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--light-color);
-  border: 1px solid var(--light-color);
+  background-color: #8B4513; /* SaddleBrown */
 }
-
-/* Media Queries */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-  
-  .nav-list {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list li {
-    margin-left: var(--spacing-md);
-  }
-  
-  .nav-list a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-list a:hover,
-  .nav-list a.active {
-    color: var(--secondary-color);
-  }
-  
-  .btn-contact {
-    padding: 8px 20px;
-    border: 1px solid var(--primary-color);
-    border-radius: var(--border-radius);
-  }
-  
-  .btn-contact:hover {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-  }
-} 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
