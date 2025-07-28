@@ -82,6 +82,8 @@ const translations = {
     religious_events_category: "Religious Events",
     orthodox_baptism_title: "Orthodox Baptism",
     orthodox_baptism_description: "A traditional and spiritual Orthodox baptism ceremony.",
+    christian_baptism_title: "Christian Baptism",
+    christian_baptism_description: "Celebrating the sacred tradition of Christian baptism with reverence, joy, and attention to detail.",
 
     // Privacy Policy Page
     privacy_policy_title: "Privacy Policy",
@@ -157,6 +159,10 @@ const translations = {
     terms_contact_info_text: "If you have any questions about these terms, please contact us at:",
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Phone: +30 693 159 5474",
+
+    baptism_title: "Christian Baptism",
+    baptism_description: "Celebrating the sacred tradition of Christian baptism with reverence, joy, and attention to detail.",
+
   },
   de: {
     filoxenia_moments_header: "Filoxenia Moments",
@@ -241,6 +247,8 @@ const translations = {
     religious_events_category: "Religiöse Veranstaltungen",
     orthodox_baptism_title: "Orthodoxe Taufe",
     orthodox_baptism_description: "Eine traditionelle und spirituelle orthodoxe Taufzeremonie.",
+    christian_baptism_title: "Christliche Taufe",
+    christian_baptism_description: "Die heilige Tradition der christlichen Taufe mit Ehrfurcht, Freude und Liebe zum Detail feiern.",
 
     // Privacy Policy Page
     privacy_policy_title: "Datenschutzrichtlinie",
@@ -316,6 +324,9 @@ const translations = {
     terms_contact_info_text: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter:",
     terms_contact_info_email: "E-Mail: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Telefon: +30 693 159 5474",
+
+    baptism_title: "Christliche Taufe",
+    baptism_description: "Die heilige Tradition der christlichen Taufe mit Ehrfurcht, Freude und Liebe zum Detail feiern.",
   },
   el: {
     filoxenia_moments_header: "Φιλοξενία Moments",
@@ -400,6 +411,8 @@ const translations = {
     religious_events_category: "Θρησκευτικές Εκδηλώσεις",
     orthodox_baptism_title: "Ορθόδοξος Βαπτισμός",
     orthodox_baptism_description: "Μια παραδοσιακή και πνευματική ορθόδοξη τελετή βαπτίσματος.",
+    christian_baptism_title: "Χριστιανική Βάπτιση",
+    christian_baptism_description: "Γιορτάζοντας την ιερή παράδοση της χριστιανικής βάπτισης με σεβασμό, χαρά και προσοχή στη λεπτομέρεια.",
 
     // Privacy Policy Page
     privacy_policy_title: "Πολιτική Απορρήτου",
@@ -476,7 +489,7 @@ const translations = {
     terms_contact_info_email: "Email: filoxeniamoments@gmail.com",
     terms_contact_info_phone: "Τηλέφωνο: +30 693 159 5474",
 
-    baptism_title: "Christliche Taufe",
-    baptism_description: "Die heilige Tradition der christlichen Taufe mit Ehrfurcht, Freude und Liebe zum Detail feiern.",
+    baptism_title: "Ορθόδοξος Βαπτισμός",
+    baptism_description: "Η θρησκευτική τελετή της ορθόδοξης βαπτίσματος με σεβασμό, ευχάριστο και προσεκτικό στιλ.",
   },
 }; 
