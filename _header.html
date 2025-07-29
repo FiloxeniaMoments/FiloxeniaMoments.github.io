@@ -1,36 +1,114 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f1f1] px-10 py-3">
-  <div class="flex items-center gap-4 text-[#171213]">
-    <img class="h-10" src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" />
-    <h2 class="text-[#caa810] text-lg font-bold leading-tight tracking-[-0.015em]" data-translate="filoxenia_moments_header">Filoxenia Moments</h2>
-  </div>
-  <div class="flex flex-1 justify-end gap-8">
-    <div class="flex items-center gap-9">
-      <a class="text-[#caa810] text-sm font-medium leading-normal" href="index.html" data-translate="home_link">Home</a>
-      <a class="text-[#caa810] text-sm font-medium leading-normal" href="services.html" data-translate="services_link">Services</a>
-      <a class="text-[#caa810] text-sm font-medium leading-normal" href="portfolio.html" data-translate="portfolio_link">Portfolio</a>
-      <a class="text-[#caa810] text-sm font-medium leading-normal" href="about.html" data-translate="about_us_link">About Us</a>
-      <a class="text-[#caa810] text-sm font-medium leading-normal" href="contact.html" data-translate="contact_link">Contact</a>
-    </div>
-    <div class="relative">
-      <button id="language-switcher" class="flex items-center justify-center rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea]">
-        <svg id="language-icon" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 7.643a6.5 6.5 0 118.336 8.714 8.02 8.02 0 00-2.332-1.503A6.472 6.472 0 014.332 7.643zm11.336-1.286a6.5 6.5 0 00-8.336 8.714 8.02 8.02 0 012.332-1.503A6.472 6.472 0 0015.668 6.357z" clip-rule="evenodd" />
-        </svg>
-        <span id="language-text" class="ml-2" data-translate="language_english">English</span>
-      </button>
-      <div id="language-menu" class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg hidden">
-        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="en" data-translate="language_english_menu">English</a>
-        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="de" data-translate="language_german_menu">German</a>
-        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="el" data-translate="language_greek_menu">Greek</a>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+  <!-- Desktop Container -->
+  <div class="hidden lg:block max-w-7xl mx-auto px-2">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo and Brand -->
+      <div class="flex items-center space-x-4">
+        <img 
+          class="h-10 w-10 rounded-lg object-cover" 
+          src="assets/images/filoxenia-moments.jpg" 
+          alt="Filoxenia Moments Logo" 
+        />
+        <h2 class="text-[#caa810] text-xl font-bold leading-tight tracking-tight" data-translate="filoxenia_moments_header">
+          Filoxenia Moments
+        </h2>
+      </div>
+
+      <!-- Navigation - Desktop -->
+      <nav class="flex items-center space-x-8">
+        <a class="text-[#caa810] text-sm font-medium transition-colors duration-200" href="index.html" data-translate="home_link">Home</a>
+        <a class="text-[#caa810] text-sm font-medium transition-colors duration-200" href="services.html" data-translate="services_link">Services</a>
+        <a class="text-[#caa810] text-sm font-medium transition-colors duration-200" href="portfolio.html" data-translate="portfolio_link">Portfolio</a>
+        <a class="text-[#caa810] text-sm font-medium transition-colors duration-200" href="about.html" data-translate="about_us_link">About Us</a>
+        <a class="text-[#caa810] text-sm font-medium transition-colors duration-200" href="contact.html" data-translate="contact_link">Contact</a>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="flex items-center space-x-4">
+        <!-- Language Switcher -->
+        <div class="relative">
+          <button id="language-switcher" class="flex items-center justify-center rounded-full h-10 px-4 bg-[#d34585] text-white text-sm font-medium hover:bg-[#b83a6f] transition-colors duration-200">
+            <svg id="language-icon" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 7.643a6.5 6.5 0 118.336 8.714 8.02 8.02 0 00-2.332-1.503A6.472 6.472 0 014.332 7.643zm11.336-1.286a6.5 6.5 0 00-8.336 8.714 8.02 8.02 0 012.332-1.503A6.472 6.472 0 0015.668 6.357z" clip-rule="evenodd" />
+            </svg>
+            <span id="language-text" class="ml-2" data-translate="language_english">English</span>
+          </button>
+          <div id="language-menu" class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 hidden z-50">
+            <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-lg" data-lang="en" data-translate="language_english_menu">English</a>
+            <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50" data-lang="de" data-translate="language_german_menu">German</a>
+            <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-lg" data-lang="el" data-translate="language_greek_menu">Greek</a>
+          </div>
+        </div>
+
+        <!-- Plan Event Button -->
+        <a
+          id="plan-event-button"
+          href="contact.html"
+          class="flex items-center justify-center rounded-full h-10 px-6 bg-[#d34585] text-white text-sm font-bold hover:bg-[#b83a6f] transition-colors duration-200"
+        >
+          <span data-translate="plan_your_event_button">Plan Your Event</span>
+        </a>
       </div>
     </div>
-    <a
-      href="contact.html"
-      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea] text-sm font-bold leading-normal tracking-[0.015em]"
-    >
-      <span class="truncate" data-translate="plan_your_event_button">Plan Your Event</span>
-    </a>
   </div>
-</header> 
+
+  <!-- Mobile Container -->
+  <div class="lg:hidden px-4">
+    <div class="flex items-center justify-between h-36">
+      <!-- Logo and Brand -->
+      <div class="flex items-center space-x-3">
+        <img 
+          class="h-8 w-8 rounded-lg object-cover" 
+          src="assets/images/filoxenia-moments.jpg" 
+          alt="Filoxenia Moments Logo" 
+        />
+      </div>
+
+      <!-- Navigation - Mobile (three rows) -->
+      <nav class="flex flex-col space-y-2 z-20">
+        <!-- First row: Home Services -->
+        <div class="flex items-center space-x-4">
+          <a class="text-[#caa810] text-xs font-medium transition-colors duration-200" href="index.html" data-translate="home_link">Home</a>
+          <a class="text-[#caa810] text-xs font-medium transition-colors duration-200" href="services.html" data-translate="services_link">Services</a>
+        </div>
+        <!-- Second row: Portfolio About -->
+        <div class="flex items-center space-x-4">
+          <a class="text-[#caa810] text-xs font-medium transition-colors duration-200" href="portfolio.html" data-translate="portfolio_link">Portfolio</a>
+          <a class="text-[#caa810] text-xs font-medium transition-colors duration-200" href="about.html" data-translate="about_us_link">About</a>
+        </div>
+        <!-- Third row: Contact -->
+        <div class="flex items-center space-x-4">
+          <a class="text-[#caa810] text-xs font-medium transition-colors duration-200" href="contact.html" data-translate="contact_link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Mobile Actions -->
+      <div class="flex items-center space-x-2 relative z-30">
+        <!-- Mobile Language Switcher -->
+        <div class="relative">
+          <button id="mobile-language-switcher" class="flex items-center justify-center rounded-full h-8 w-8 bg-[#d34585] text-white hover:bg-[#b83a6f] transition-colors duration-200 cursor-pointer">
+            <span id="mobile-language-text" class="text-xs font-medium uppercase">EN</span>
+          </button>
+          <div id="mobile-language-menu" class="absolute right-0 mt-2 w-16 bg-white rounded-lg shadow-lg border border-gray-100 hidden z-50">
+            <a href="#" class="block px-3 py-2 text-xs text-center text-gray-700 hover:bg-gray-50 rounded-t-lg" data-lang="en" data-translate="language_code">EN</a>
+            <a href="#" class="block px-3 py-2 text-xs text-center text-gray-700 hover:bg-gray-50" data-lang="de" data-translate="language_code">DE</a>
+            <a href="#" class="block px-3 py-2 text-xs text-center text-gray-700 hover:bg-gray-50 rounded-b-lg" data-lang="el" data-translate="language_code">EL</a>
+          </div>
+        </div>
+
+        <!-- Mobile Plan Event Button -->
+        <a
+          href="contact.html"
+          class="flex items-center justify-center rounded-full h-8 px-3 bg-[#d34585] text-white text-xs font-bold hover:bg-[#b83a6f] transition-colors duration-200"
+        >
+          <span data-translate="plan_your_event_button_mobile">Planning</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script src="js/mobile-menu.js"></script>
+<script src="js/language-switcher.js"></script> 

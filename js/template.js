@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Embedded fallback content
   const fallbackHeader = `
-    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f1f1] px-10 py-3">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f1f1] px-4 md:px-10 py-3">
       <div class="flex items-center gap-4 text-[#171213]">
-        <img class="h-10" src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" />
-        <h2 class="text-[#caa810] text-lg font-bold leading-tight tracking-[-0.015em]" data-translate="filoxenia_moments_header">Filoxenia Moments</h2>
+        <img class="h-8 md:h-10" src="assets/images/filoxenia-moments.jpg" alt="Filoxenia Moments Logo" />
+        <h2 class="hidden md:block text-[#caa810] text-lg font-bold leading-tight tracking-[-0.015em]" data-translate="filoxenia_moments_header">Filoxenia Moments</h2>
       </div>
-      <div class="flex flex-1 justify-end gap-8">
-        <div class="flex items-center gap-9">
+      <div class="flex flex-1 items-center justify-end gap-2 md:gap-8">
+        <div class="hidden md:flex items-center gap-9">
           <a class="text-[#caa810] text-sm font-medium leading-normal" href="index.html" data-translate="home_link">Home</a>
           <a class="text-[#caa810] text-sm font-medium leading-normal" href="services.html" data-translate="services_link">Services</a>
           <a class="text-[#caa810] text-sm font-medium leading-normal" href="portfolio.html" data-translate="portfolio_link">Portfolio</a>
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <a class="text-[#caa810] text-sm font-medium leading-normal" href="contact.html" data-translate="contact_link">Contact</a>
         </div>
         <div class="relative">
-          <button id="language-switcher" class="flex items-center justify-center rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea]">
+          <button id="language-switcher" class="flex items-center justify-center rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea] text-xs md:text-sm">
             <svg id="language-icon" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 7.643a6.5 6.5 0 118.336 8.714 8.02 8.02 0 00-2.332-1.503A6.472 6.472 0 014.332 7.643zm11.336-1.286a6.5 6.5 0 00-8.336 8.714 8.02 8.02 0 012.332-1.503A6.472 6.472 0 0015.668 6.357z" clip-rule="evenodd" />
             </svg>
@@ -27,11 +27,36 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-lang="el" data-translate="language_greek_menu">Greek</a>
           </div>
         </div>
-        <a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea] text-sm font-bold leading-normal tracking-[0.015em]">
+        <a
+          id="plan-event-button"
+          href="contact.html"
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#d34585] text-[#f6e7ea] text-xs md:text-sm font-bold leading-normal tracking-[0.015em]"
+        >
           <span class="truncate" data-translate="plan_your_event_button">Plan Your Event</span>
         </a>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="p-2 text-[#d34585]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
+    <div id="mobile-menu" class="hidden md:hidden px-10 pb-3">
+      <a href="index.html" class="block py-2 text-[#caa810]" data-translate="home_link">Home</a>
+      <div class="relative">
+        <button id="mobile-menu-toggle" class="block w-full text-left py-2 text-[#caa810]" data-translate="menu_link">Menu</button>
+        <div id="mobile-submenu" class="hidden pl-4">
+          <a href="services.html" class="block py-2 text-[#caa810]" data-translate="services_link">Services</a>
+          <a href="portfolio.html" class="block py-2 text-[#caa810]" data-translate="portfolio_link">Portfolio</a>
+          <a href="about.html" class="block py-2 text-[#caa810]" data-translate="about_us_link">About Us</a>
+        </div>
+      </div>
+      <a href="contact.html" class="block py-2 text-[#caa810]" data-translate="contact_link">Contact</a>
+    </div>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/language-switcher.js"></script>
   `;
 
   const fallbackFooter = `
