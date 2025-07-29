@@ -8,6 +8,11 @@
     font-family: "Noto Serif", "Noto Sans", sans-serif;
   }
 
+  .button-text-wrap {
+    white-space: normal;
+    text-align: center;
+  }
+
   /* Portfolio Components */
   .portfolio-card-1 {
     background-image: url("./pictures/garten-wedd.webp");
