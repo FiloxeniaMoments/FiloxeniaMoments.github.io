@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("Template v2 script loaded!");
   // Embedded fallback content
   const fallbackHeader = `
     <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f1f1] px-4 md:px-10 py-3">
@@ -167,4 +168,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }).catch((error) => {
     console.error("Error loading components:", error);
   });
-}); 
+});
