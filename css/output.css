@@ -799,7 +799,7 @@ video {
   flex-direction: column;
   overflow-x: hidden;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(232 228 225 / var(--tw-bg-opacity, 1));
   font-family: Noto Sans, sans-serif;
 }
 
@@ -1464,18 +1464,13 @@ video {
   background-color: rgb(211 69 133 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+.bg-\[\#e8e4e1\]\/95 {
+  background-color: rgb(232 228 225 / 0.95);
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white\/95 {
-  background-color: rgb(255 255 255 / 0.95);
 }
 
 .bg-cover {
