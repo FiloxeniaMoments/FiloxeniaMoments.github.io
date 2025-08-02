@@ -14,7 +14,10 @@ module.exports = {
         accent: {
           DEFAULT: '#caa810',  // gold color
           muted: '#83676d',    // muted text color
-        }
+        },
+        custom: {
+            background: '#e8e4e1',  // custom background color from logo
+          }
       },
       fontFamily: {
         'sans': ['Noto Sans', 'sans-serif'],
