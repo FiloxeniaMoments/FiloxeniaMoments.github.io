@@ -1,5 +1,57 @@
 # FiloxeniaMoments.github.io
 
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/FiloxeniaMoments.github.io.git
+   cd FiloxeniaMoments.github.io
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+1. Build CSS (one-time):
+   ```bash
+   npm run build
+   ```
+
+2. Watch CSS changes (during development):
+   ```bash
+   npm run watch
+   ```
+
+3. Run local server:
+   ```bash
+   # If you have Python 3 installed:
+   python -m http.server 8000
+
+   # If you have Python 2 installed:
+   python -m SimpleHTTPServer 8000
+
+   # If you have Node.js installed:
+   npx serve
+   ```
+
+4. Open your browser and visit:
+   - http://localhost:8000 (if using Python)
+   - http://localhost:3000 (if using npx serve)
+
+### Build for Production
+```bash
+npm run build
+```
+This will generate the optimized CSS file in the `css` directory.
+
 ## GitHub Pages and Jekyll
 
 This site is hosted on GitHub Pages. By default, GitHub Pages uses Jekyll to build and serve sites. However, this project uses a custom JavaScript solution to load components like the header and footer.

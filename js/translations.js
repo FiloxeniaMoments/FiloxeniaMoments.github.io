@@ -1,5 +1,7 @@
 const translations = {
   en: {
+    search_placeholder: "Search for services, events, or ideas...",
+    search_placeholder_mobile: "Search...",
     filoxenia_moments_header: "Filoxenia Moments",
     services_link: "Services",
     portfolio_link: "Portfolio",
@@ -178,6 +180,8 @@ const translations = {
     booking_call_button: "Call us"
   },
   de: {
+    search_placeholder: "Suchen Sie nach Dienstleistungen, Events oder Ideen...",
+    search_placeholder_mobile: "Suchen...",
     filoxenia_moments_header: "Filoxenia Moments",
     services_link: "Dienstleistungen",
     portfolio_link: "Portfolio",
@@ -356,6 +360,8 @@ const translations = {
     booking_call_button: "Rufen Sie uns an"
   },
   el: {
+    search_placeholder: "Αναζήτηση υπηρεσιών, εκδηλώσεων ή ιδεών...",
+    search_placeholder_mobile: "Αναζήτηση...",
     filoxenia_moments_header: "Φιλοξενία Moments",
     services_link: "Υπηρεσίες",
     portfolio_link: "Χαρτοφυλάκιο",

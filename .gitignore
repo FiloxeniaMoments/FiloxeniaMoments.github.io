@@ -12,6 +12,7 @@ package-lock.json
 .env
 .env.local
 .env.*.local
+js/config.js
 
 # IDE and editor files
 .vscode/
@@ -30,3 +31,6 @@ debug.log
 *.log
 .cache/
 .temp/
+
+# Ignore environment variables
+.env

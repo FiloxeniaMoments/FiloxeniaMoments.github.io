@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   Promise.all([
     tryLoadComponent(["_header.html", "./_header.html", "/_header.html"], "header-placeholder"),
-    tryLoadComponent(["_footer_v2.html", "./_footer_v2.html", "/_footer_v2.html"], "footer-placeholder"),
+    tryLoadComponent(["_footer.html", "./_footer.html", "/_footer.html"], "footer-placeholder"),
   ]).then(() => {
     // After loading the header, initialize the language switcher
     if (typeof initializeLanguageSwitcher === "function") {
