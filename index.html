@@ -42,7 +42,7 @@
 
       gtag('config', 'G-1VVEQCBBFV');
     </script>
-
+    <script src="js/search.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -52,6 +52,8 @@
     />
     <link rel="stylesheet" href="css/output.css" />
     <title>Filoxenia Moments</title>
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
   <body>
     <div class="layout-root">
@@ -59,6 +61,36 @@
         <div id="header-placeholder"></div>
         <div class="layout-content-wrapper">
           <div class="layout-content">
+            <!-- Search Section -->
+                          <div class="responsive-container mb-8">
+                <div class="responsive-section">
+                  <div class="search-container w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto">
+                      <input 
+                        type="text" 
+                        id="search-input"
+                        class="w-full h-10 sm:h-12 md:h-14 px-4 sm:px-6 text-base sm:text-lg rounded-full border border-[#e5e3dc] bg-white focus:border-[#caa810] focus:outline-none focus:ring-0 placeholder-gray-400"
+                        placeholder="Search for services, events, or ideas..."
+                        data-translate="search_placeholder"
+                      />
+                      <button 
+                        id="search-button"
+                        class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-[#d34585] text-white rounded-full p-2 sm:p-3 hover:bg-[#b83a6f] transition-colors duration-200 flex items-center justify-center"
+                        aria-label="Search"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- Search Results -->
+                  <div id="search-results" class="hidden max-w-2xl mx-auto mt-4 bg-white rounded-lg shadow-lg border border-[#e5e3dc] divide-y divide-[#e5e3dc]">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Section -->
             <div class="responsive-container">
               <div class="responsive-section">
                 <div class="hero-content">
@@ -126,7 +158,7 @@
     <script src="js/translations.js"></script>
     <script src="js/language-switcher.js"></script>
     <script src="js/mobile-menu.js"></script>
-    <script src="js/template_v2.js"></script>
+    <script src="js/template.js"></script>
     <script 
       src="https://widgets.leadconnectorhq.com/loader.js"  
       data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
